@@ -49,30 +49,14 @@ const Index = ({
       big
       title={
         <React.Fragment>
-          Kommunikationsdesigner & <br /> Front-End Entwickler
+          Innovación <br />Continua
         </React.Fragment>
       }
     />
-    <Container type="big">
-      <ProjectsWrapper>
-        {projectEdges.map(project => (
-          <FeaturedProject
-            key={project.node.frontmatter.title}
-            cover={project.node.frontmatter.cover.childImageSharp.fluid}
-            customer={project.node.frontmatter.customer}
-            path={project.node.fields.slug}
-            title={project.node.frontmatter.title}
-          />
-        ))}
-      </ProjectsWrapper>
-    </Container>
+   
     <Container>
       <Text>
-        Ich entwerfe, gestalte und entwickle plattformübergreifende Design-Konzepte, um das volle Potential aus deiner
-        Marke herauszuholen. <br />
-        <Link to="/projekte">
-          <Button type="primary">Projekte</Button>
-        </Link>
+        bla bla
       </Text>
     </Container>
     <Container>

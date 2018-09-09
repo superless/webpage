@@ -24,7 +24,7 @@ const colors = {
     dark: '#d17c26',
   },
   background: {
-    light: '#46507a',
+    light: 'purple',
     dark: '#fff',
   },
   brands: {

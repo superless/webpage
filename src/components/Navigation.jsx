@@ -49,12 +49,12 @@ const Navigation = () => (
   <Headroom calcHeightOnResize disableInlineStyles>
     <StyledLink to="/">
       <Logo />
-      <LogoText>LekoArts</LogoText>
+      <LogoText>TRIFENIX</LogoText>
     </StyledLink>
     <Nav>
-      <Link to="/projekte">Projekte</Link>
-      <Link to="/blog">Blog</Link>
-      <Link to="/kontakt">Kontakt</Link>
+      
+     <Link to="/blog">Blog</Link>
+      <Link to="/kontakt">Contacto</Link>
     </Nav>
   </Headroom>
 );
