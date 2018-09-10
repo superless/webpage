@@ -19,7 +19,7 @@
     "gatsby-plugin-emotion": "^2.0.0-beta.2",
     "gatsby-plugin-google-analytics": "^2.0.0-beta.2",
     "gatsby-plugin-lodash": "^3.0.1-beta.2",
-    "gatsby-plugin-manifest": "^2.0.2-beta.2",
+    "gatsby-plugin-manifest": "^2.0.2-rc.1",
     "gatsby-plugin-netlify": "^2.0.0-beta.2",
     "gatsby-plugin-nprogress": "^2.0.0-beta.2",
     "gatsby-plugin-offline": "^2.0.0-beta.2",
@@ -37,6 +37,7 @@
     "gatsby-transformer-remark": "^2.1.1-beta.2",
     "gatsby-transformer-sharp": "^2.1.1-beta.2",
     "lodash": "^4.17.10",
+    "npm": "^6.4.1",
     "polished": "^1.9.2",
     "prismjs": "^1.15.0",
     "prop-types": "^15.6.2",
@@ -48,7 +49,8 @@
     "react-typography": "^0.16.13",
     "typeface-istok-web": "^0.0.54",
     "typeface-montserrat": "^0.0.54",
-    "typography": "^0.16.17"
+    "typography": "^0.16.17",
+    "update": "^0.7.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",

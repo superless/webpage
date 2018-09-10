@@ -10,7 +10,7 @@ import { reset, headroom } from 'styles';
 import { SEO } from 'elements';
 import Navigation from '../components/Navigation';
 import theme from '../../config/theme';
-import Firebase from '../components/firebase'
+
 injectGlobal`
   ${reset}
   .gatsby-resp-image-wrapper {
@@ -26,32 +26,18 @@ injectGlobal`
   ${headroom}
 `;
 
-class Layout extends React.Component{
-
-  componentDidMount(){
-    try{
-        this.firebase = new Firebase();
-        this.firebase.fbase().askForPermission();
-      } catch (e){
-        console.log("error: "+ e);
-      }
-}
-
-  render() {
-    return (
-      <ThemeProvider theme={theme}>
-        <React.Fragment>
-          <SEO />
-          <Navigation />
-          {this.props.children}
-        </React.Fragment>
-      </ThemeProvider>
-    );
-  }
-}
+const Layout = ({ children }) => (
+  <ThemeProvider theme={theme}>
+    <React.Fragment>
+      <SEO />
+      <Navigation />
+      {children}
+    </React.Fragment>
+  </ThemeProvider>
+);
 
 export default Layout;
 
 Layout.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired,
+  children: PropTypes.any.isRequired,
 };

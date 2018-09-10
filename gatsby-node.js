@@ -1,39 +1,9 @@
 const path = require('path');
 const _ = require('lodash');
 
-const pathPrefixes = {
-  blog: '/blog',
-  projekte: '/projekte',
-};
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
-  let slug;
-  if (node.internal.type === 'MarkdownRemark') {
-    const fileNode = getNode(node.parent);
-    const pathPrefix = pathPrefixes[fileNode.sourceInstanceName];
-    if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
-    ) {
-      slug = `/${_.kebabCase(node.frontmatter.slug)}`;
-    }
-    if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
-    ) {
-      slug = `/${_.kebabCase(node.frontmatter.title)}`;
-    }
-    if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'customer')
-    ) {
-      slug = `/${_.kebabCase(node.frontmatter.customer)}-${_.kebabCase(node.frontmatter.title)}`;
-    }
-    createNodeField({ node, name: 'sourceInstanceName', value: fileNode.sourceInstanceName });
-    createNodeField({ node, name: 'slug', value: `${pathPrefix}${slug}` });
-  }
-};
+
+
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -148,6 +118,7 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
         });
+        
 
         const tagList = Array.from(tagSet);
         tagList.forEach(tag => {

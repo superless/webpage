@@ -3,9 +3,9 @@ module.exports = {
   blogPostDir: 'blog',
   projectPostDir: 'projekte',
   // Meta Data
-  siteTitle: 'LekoArts - Kommunikationsdesigner & Front-End Entwickler',
-  siteTitleAlt: 'LekoArts',
-  siteShortName: 'LekoArts',
+  siteTitle: 'trifenix - innovación continua',
+  siteTitleAlt: 'trifeniX',
+  siteShortName: 'trifeniX',
   siteLogo: '/social/avatar.png',
   siteBanner: '/social/banner.jpg',
   siteUrl: 'https://www.lekoarts.de',
