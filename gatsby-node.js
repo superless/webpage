@@ -71,30 +71,32 @@ exports.createPages = ({ graphql, actions }) => {
   //   })
   // })
 
-  // const loadTags = new Promise((resolve, reject) => {
-  //   graphql(`
-  //     {
-  //       allContentfulTag {
-  //         edges {
-  //           node {
-  //             slug
-  //           }
-  //         }
-  //       }
-  //     }
-  //   `).then(result => {
-  //     result.data.allContentfulTag.edges.map(({ node }) => {
-  //       createPage({
-  //         path: `tag/${node.slug}/`,
-  //         component: path.resolve(`./src/templates/tag.js`),
-  //         context: {
-  //           slug: node.slug,
-  //         },
-  //       })
-  //     })
-  //     resolve()
-  //   })
-  // })
+  const loadTags = new Promise((resolve, reject) => {
+    graphql(`
+      {
+        allContentfulTag {
+          edges {
+            node {
+              title
+              slug
+            }
+          }
+        }
+      }
+    `).then(result => {
+      result.data.allContentfulTag.edges.map(({ node }) => {
+      
+        createPage({
+          path: `tag/${node.slug}/`,
+          component: path.resolve(`./src/templates/tag.jsx`),
+          context: {
+            tag: node.title,
+          },
+        })
+      })
+      resolve()
+    })
+  })
 
-  return Promise.all([loadPosts])
+  return Promise.all([loadPosts, loadTags])
 }

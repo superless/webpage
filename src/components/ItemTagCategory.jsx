@@ -35,21 +35,24 @@ const Excerpt = styled.div`
   margin-top: 1rem;
 `;
 
-const ItemTagCategory = ({ category, path, title, date, timeToRead, tags, excerpt }) => (
-  <Wrapper>
-    <Information>
-      <Link to={path}>
-        <h1>{title}</h1>
-      </Link>
-      <Statistics>
-        {date} &mdash; Lesezeit: {timeToRead} Min. &mdash; <span className={hideS}>Kategorie: </span>
-        <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
-      </Statistics>
-      {tags && <Tags tags={tags} />}
-      <Excerpt>{excerpt}</Excerpt>
-    </Information>
-  </Wrapper>
-);
+const ItemTagCategory = ({ category, path, title, date, timeToRead, tags, excerpt }) => {
+ 
+  return (
+    <Wrapper>
+      <Information>
+        <Link to={path}>
+          <h1>{title}</h1>
+        </Link>
+        <Statistics>
+          {date} &mdash; Lesezeit: {timeToRead} Min. &mdash; <span className={hideS}>Kategorie: </span>
+          <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
+        </Statistics>
+        {tags && <Tags tags={tags} />}
+        <Excerpt>{excerpt}</Excerpt>
+      </Information>
+    </Wrapper>
+  );
+}
 
 export default ItemTagCategory;
 
