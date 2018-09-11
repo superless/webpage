@@ -20,7 +20,7 @@ const ErrorPage = () => (
           🤔
         </span>
       </h1>
-      <h3>Die Seite, die du aufrufen wolltest, existiert nicht mehr oder ist momentan nicht erreichbar.</h3>
+      <h3>Die Seite, dasd die du aufrufen wolltest, existiert nicht mehr oder ist momentan nicht erreichbar.</h3>
       <p>
         Um die Leere schnell zu überbrücken, kannst du zur <Link to="/">Homepage</Link> zurückkehren oder meine Videos
         bingewatchen! Schreib mir gerne deine Videovorschläge auf{' '}

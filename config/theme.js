@@ -1,6 +1,22 @@
 import { rgba } from 'polished';
 
+
+
+const sizes =  {
+  maxWidth: '1200px',
+  maxWidthCentered: '650px',
+};
+
+const responsive = {
+  small: '35em',
+  medium: '50em',
+  large: '70em',
+};
+
+
 const colors = {
+  tertiary: '#f3f3f3', // Light Gray
+  highlight: '#5b8bf7', // Light Blue
   white: {
     base: '#fff',
     light: '#f0f0f0',
@@ -108,6 +124,8 @@ const theme = {
   gradient,
   button,
   shadow,
+  sizes,
+  responsive,
   breakpoints: {
     xs: '400px',
     s: '600px',
@@ -143,5 +161,6 @@ const theme = {
     },
   },
 };
+
 
 export default theme;

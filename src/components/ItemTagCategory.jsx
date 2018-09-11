@@ -6,6 +6,7 @@ import kebabCase from 'lodash/kebabCase';
 import { hideS } from 'utilities';
 import Tags from './Tags';
 
+
 const Wrapper = styled.article`
   display: flex;
   flex-direction: column;
@@ -44,7 +45,7 @@ const ItemTagCategory = ({ category, path, title, date, timeToRead, tags, excerp
         {date} &mdash; Lesezeit: {timeToRead} Min. &mdash; <span className={hideS}>Kategorie: </span>
         <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
       </Statistics>
-      <Tags tags={tags} />
+      {tags && <Tags tags={tags} />}
       <Excerpt>{excerpt}</Excerpt>
     </Information>
   </Wrapper>
@@ -55,7 +56,7 @@ export default ItemTagCategory;
 ItemTagCategory.propTypes = {
   category: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   date: PropTypes.string.isRequired,
   timeToRead: PropTypes.number.isRequired,
   tags: PropTypes.array.isRequired,

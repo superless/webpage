@@ -25,19 +25,20 @@ const TagsContainer = styled.div`
   }
 `;
 
-const Tags = ({ tags }) => (
-  <TagsContainer>
-    {tags &&
-      tags.map(tag => (
-        <Link key={tag} to={`/tags/${kebabCase(tag)}`}>
-          <span>{tag}</span>
-        </Link>
+const Tags = props => {
+  return (
+    <TagsContainer>
+      {props.tags.map(tag => (
+        
+          <Link key={tag.id} to={`/tag/${tag.slug}/`}>{tag.title}</Link>
+        
       ))}
-  </TagsContainer>
-);
+    </TagsContainer>
+  )
+}
+
+
 
 export default Tags;
 
-Tags.propTypes = {
-  tags: PropTypes.array.isRequired,
-};
+

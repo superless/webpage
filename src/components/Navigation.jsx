@@ -6,6 +6,7 @@ import styled from 'react-emotion';
 import Headroom from 'react-headroom';
 import Logo from '../icons/Logo';
 
+
 const StyledLink = styled(Link)`
   display: flex;
   font-weight: 700;

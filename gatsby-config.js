@@ -1,93 +1,88 @@
-const config = require('./config/website');
+const config = require("./config/website");
+let contentfulConfig;
 
-const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
+try {
+  contentfulConfig = require("./.contentful");
+} catch (e) {
+  contentfulConfig = {
+    production: {
+      spaceId: process.env.SPACE_ID,
+      accessToken: process.env.ACCESS_TOKEN
+    }
+  };
+} finally {
+  const { spaceId, accessToken } = contentfulConfig.production;
+  if (!spaceId || !accessToken) {
+    throw new Error(
+      "Contentful space ID and access token need to be provided."
+    );
+  }
+}
+
+const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
 
 module.exports = {
   /* General Information */
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    siteUrl: config.siteUrl + pathPrefix,
+    siteUrl: config.siteUrl + pathPrefix
   },
   /* Plugins */
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-emotion',
+    "gatsby-plugin-react-helmet",
     {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'blog',
-        path: `${__dirname}/content/${config.blogPostDir}`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'projekte',
-        path: `${__dirname}/content/${config.projectPostDir}`,
-      },
-    },
-    'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-transformer-remark',
+      resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 750,
-              quality: 90,
-              linkImagesToOriginal: true,
-            },
+            resolve: `gatsby-remark-prismjs`
           },
           {
-            resolve: 'gatsby-remark-external-links',
+            resolve: `gatsby-remark-images-contentful`,
             options: {
-              target: '_blank',
-              rel: 'nofollow noopener noreferrer',
-            },
-          },
-          {
-            resolve: 'gatsby-remark-responsive-iframe',
-          },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-copy-linked-files',
-          {
-            resolve: 'gatsby-remark-autolink-headers',
-            options: {
-              icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.1 74.1" height="18" width="18">
-  <path d="M41.5 55.3c.9 0 1.3 1.1.7 1.7L30.3 68.9c-6.9 6.9-18.2 7-25.1.1v-.1c-6.9-7-6.8-18.2.1-25.1l15.2-15.2c6.9-6.9 18.2-7 25.1-.1.6.6 1.2 1.3 1.7 2 .3.4.2.9-.1 1.3l-3.5 3.5c-1.2 1.2-2.9 1.6-4.2.5-5.2-4.8-9.1-3.8-12.3-.6L12 50.6c-3.2 3.2-3.2 8.4 0 11.6 3.2 3.2 8.4 3.1 11.6 0l8.2-8.2c.3-.3.7-.4 1.1-.2 2.7 1 5.6 1.6 8.6 1.5zM68.9 5.1c-7-6.9-18.2-6.8-25.1.1L31.9 17.1c-.6.6-.2 1.7.7 1.7 3-.1 5.9.5 8.7 1.6.4.1.8.1 1.1-.2l8.2-8.2c3.2-3.2 8.4-3.2 11.6 0 3.2 3.2 3.1 8.4 0 11.6L46.9 38.7c-3.2 3.2-8.4 3.2-11.6.1l-.4-.4c-1.2-1.4-3.3-.8-4.5.3l-3.5 3.5c-.3.3-.4.9-.1 1.3.5.7 1.1 1.4 1.7 2 7 6.9 18.2 6.8 25.1-.1l15.2-15.2c7-6.8 7-18 .1-25.1.1.1 0 .1 0 0z"/>
-</svg>
-`,
-            },
-          },
-        ],
-      },
+              maxWidth: 650,
+              backgroundColor: "white",
+              linkImagesToOriginal: false
+            }
+          }
+        ]
+      }
+    },
+    "gatsby-plugin-emotion",
+    {
+      resolve: "gatsby-source-contentful",
+      options:
+        process.env.NODE_ENV === "development"
+          ? contentfulConfig.development
+          : contentfulConfig.production
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: config.googleAnalyticsID,
-        anonymize: true,
-      },
+        anonymize: true
+      }
     },
     {
-      resolve: 'gatsby-plugin-nprogress',
+      resolve: "gatsby-plugin-nprogress",
       options: {
-        color: config.themeColor,
-      },
+        color: config.themeColor
+      }
     },
-    'gatsby-plugin-sharp',
+    "gatsby-plugin-sharp",
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: "gatsby-plugin-typography",
       options: {
-        pathToConfigModule: 'config/typography.js',
-      },
+        pathToConfigModule: "config/typography.js"
+      }
     },
-    'gatsby-plugin-catch-links',
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-lodash',
+    "gatsby-plugin-catch-links",
+    "gatsby-plugin-sitemap",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-lodash",
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-plugin-manifest",
       options: {
         name: config.siteTitle,
         short_name: config.siteShortName,
@@ -95,23 +90,91 @@ module.exports = {
         start_url: config.pathPrefix,
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: 'fullscreen',
+        display: "fullscreen",
         icons: [
           {
-            src: '/favicons/android-chrome-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
+            src: "/favicons/android-chrome-192x192.png",
+            sizes: "192x192",
+            type: "image/png"
           },
           {
-            src: '/favicons/android-chrome-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
-      },
+            src: "/favicons/android-chrome-512x512.png",
+            sizes: "512x512",
+            type: "image/png"
+          }
+        ]
+      }
     },
     /* Must be placed at the end */
-    'gatsby-plugin-offline',
-    'gatsby-plugin-netlify',
-  ],
+    "gatsby-plugin-offline",
+    {
+      resolve: "gatsby-plugin-feed",
+      options: {
+        setup(ref) {
+          const ret = ref.query.site.siteMetadata.rssMetadata;
+          ret.allMarkdownRemark = ref.query.allMarkdownRemark;
+          ret.generator = "Trifenix";
+          return ret;
+        },
+        query: `
+        {
+          site {
+            siteMetadata {
+              rssMetadata {
+                site_url
+                feed_url
+                title
+                description
+                image_url
+                author
+                copyright
+              }
+            }
+          }
+        }
+      `,
+        feeds: [
+          {
+            serialize(ctx) {
+              const rssMetadata = ctx.query.site.siteMetadata.rssMetadata;
+              return ctx.query.allContentfulPost.edges.map(edge => ({
+                date: edge.node.publishDate,
+                title: edge.node.title,
+                description: edge.node.body.childMarkdownRemark.excerpt,
+
+                url: rssMetadata.site_url + "/" + edge.node.slug,
+                guid: rssMetadata.site_url + "/" + edge.node.slug,
+                custom_elements: [
+                  {
+                    "content:encoded": edge.node.body.childMarkdownRemark.html
+                  }
+                ]
+              }));
+            },
+            query: `
+              {
+            allContentfulPost(limit: 1000, sort: {fields: [publishDate], order: DESC}) {
+               edges {
+                 node {
+                   title
+                   slug
+                   publishDate(formatString: "MMMM DD, YYYY")
+                   body {
+                     childMarkdownRemark {
+                       html
+                       excerpt(pruneLength: 80)
+                     }
+                   }
+                 }
+               }
+             }
+           }
+      `,
+            output: "/rss.xml"
+          }
+        ]
+      }
+    },
+    "gatsby-plugin-netlify"
+  ]
 };
