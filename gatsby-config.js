@@ -25,7 +25,16 @@ module.exports = {
   /* General Information */
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    siteUrl: config.siteUrl + pathPrefix
+    siteUrl: config.siteUrl,
+    rssMetadata: {
+      site_url: config.siteUrl,
+      feed_url: `${config.siteUrl}/rss.xml`,
+      title: config.siteTitle,
+      description: config.siteDescription,
+      image_url: `${config.siteUrl}${config.siteLogo}`,
+      author: config.author,
+      copyright: config.copyright,
+    }
   },
   /* Plugins */
   plugins: [
@@ -105,6 +114,7 @@ module.exports = {
         ]
       }
     },
+    "gatsby-plugin-netlify",
     /* Must be placed at the end */
     "gatsby-plugin-offline",
     {
@@ -174,7 +184,7 @@ module.exports = {
           }
         ]
       }
-    },
-    "gatsby-plugin-netlify"
+    }
+    
   ]
 };
