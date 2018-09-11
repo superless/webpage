@@ -19,7 +19,7 @@ const Tag = ({
 }) => {
  
   let {0:first} = data.allContentfulTag.edges;
-  console.log(first)
+ 
   
   return (
   <Layout>
