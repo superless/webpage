@@ -3,29 +3,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
-import styled from 'react-emotion';
+import styled, {keyframes} from 'react-emotion';
 import { Container, Layout } from 'elements';
 import Footer from '../components/Footer';
-import FeaturedProject from '../components/FeaturedProject';
-import FeaturedPost from '../components/FeaturedPost';
-import Header from '../components/Header';
+import Wave from '../elements/Wave'
+import Img from 'gatsby-image'
+
 import Button from '../components/Button';
+import Hero from '../utilities/Hero';
 
-const ProjectsWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  margin-top: -10rem;
-`;
-
-const PostsWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 10rem;
-`;
 
 const Text = styled.p`
   text-align: center;
@@ -37,40 +23,108 @@ const Text = styled.p`
   margin: 5rem auto;
   text-shadow: ${props => props.theme.shadow.text.big};
 `;
+const pulse = keyframes`
+  0% {
+    transform: scale(1);
+    animation-timing-function: ease-in;
+  }
+  25% {
+    animation-timing-function: ease-out;
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.12);
+    animation-timing-function: ease-in;
+  }
+  to {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+`;
 
-const Index = () => (
-  <Layout>
-    <Header
-      big
-      title={
+const Wrapper = styled.div`
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  .gatsby-image-wrapper {
+    height: 600px;
+    img {
+      animation: ${pulse} 30s infinite;
+    }
+  }
+  @media (max-width: ${props => props.theme.breakpoints.m}) {
+    height: 500px;
+    .gatsby-image-wrapper {
+      height: 500px;
+    }
+  }
+  @media (max-width: ${props => props.theme.breakpoints.s}) {
+    height: 400px;
+    .gatsby-image-wrapper {
+      height: 400px;
+    }
+  }
+`;
+
+const Index = (data) => { 
+  console.log(data.data);
+  return (
+    <Layout>
+      <Wrapper>
+        <Hero>
         <React.Fragment>
-          Kommunikationsdesigner & <br /> Front-End Entwickler
-        </React.Fragment>
-      }
-    />
-    
-    <Container>
-      <Text>
-        Ich entwerfe, gestalte und entwickle plattformübergreifende Design-Konzepte, um das volle Potential aus deiner
-        Marke herauszuholen. <br />
-        <Link to="/projekte">
-          <Button type="primary">Projekte</Button>
-        </Link>
-      </Text>
-    </Container>
-    <Container>
+        equilibrio entre aprender, construir y enseñar
+                </React.Fragment>
+        </Hero>
+        
+        <Wave />
+        <Img fluid={data.data.contentfulIndex.frontImage.fluid} />
+      </Wrapper>
+
       
-      <Text>
-        Mit ebenso viel Leidenschaft schreibe ich über Design- und Coding-Themen und gebe mein Wissen in Form von
-        Tutorials weiter. <br />
-        <Link to="/blog">
-          <Button type="secondary">Blog</Button>
-        </Link>
-      </Text>
-    </Container>
-    <Footer />
-  </Layout>
-);
+  
+      
+       
+      <Container>
+        <Text>
+          Ich entwerfe, gestalte und entwickle plattformübergreifende Design-Konzepte, um das volle Potential aus deiner
+          Marke herauszuholen. <br />
+          <Link to="/projekte">
+            <Button type="primary">Projekte</Button>
+          </Link>
+        </Text>
+      </Container>
+      <Container>
+        
+        <Text>
+          Mit ebenso viel Leidenschaft schreibe ich über Design- und Coding-Themen und gebe mein Wissen in Form von
+          Tutorials weiter. <br />
+          <Link to="/blog">
+            <Button type="secondary">Blog</Button>
+          </Link>
+        </Text>
+      </Container>
+      <Footer />
+    </Layout>
+  );
+}
+export const query = graphql`
+  query
+  {
+    contentfulIndex(text : {eq : "index"}){
+      frontImage{
+           title
+          fluid(maxWidth: 900, quality: 85) {
+            ...GatsbyContentfulFluid_withWebp_noBase64
+          }
+          ogimg: resize(width: 1800) {
+            src
+            width
+            height
+          }
+      }
+    }
+  }`
 
 export default Index;
 

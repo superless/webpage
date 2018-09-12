@@ -1,19 +1,17 @@
 module.exports = {
-  // Basics
-  blogPostDir: 'blog',
-  projectPostDir: 'projekte',
+
   // Meta Data
-  siteTitle: 'LekoArts - Kommunikationsdesigner & Front-End Entwickler',
-  siteTitleAlt: 'LekoArts',
-  siteShortName: 'LekoArts',
+  siteTitle: 'trifenix - equilibrio entre aprender, construir y enseñar',
+  siteTitleAlt: 'Trifenix',
+  siteShortName: 'Trifenix',
   siteLogo: '/social/avatar.png',
   siteBanner: '/social/banner.jpg',
-  siteUrl: 'https://www.lekoarts.de',
+  siteUrl: 'https://www.trifenix.com',
   pathPrefix: '/',
   siteDescription:
     'Hi! Ich heiße Lennart und bin sowohl autodidaktischer als auch leidenschaftlicher Kommunikationsdesigner & Front-End Entwickler. Ich entwerfe, gestalte und entwickle plattformübergreifende Design-Konzepte, um das volle Potential aus deiner Marke herauszuholen.',
   // IDs
-  googleAnalyticsID: 'UA-47519312-1',
+  googleAnalyticsID: '',
   twitter: '@lekoarts_de',
   facebook: 'lekoarts.de',
   // Manifest
