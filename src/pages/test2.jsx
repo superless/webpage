@@ -9,7 +9,7 @@ import Img from 'gatsby-image'
 
 import Hero from '../utilities/Hero';
 
-import Layout from './../elements/Layout'
+import Layout from '../elements/Layout'
 import Home from 'components/mfort/home'
 const Text = styled.p`
   text-align: center;
