@@ -1,16 +1,18 @@
-import React from 'react'
-import { graphql } from 'gatsby';
-import styled, {keyframes} from 'react-emotion';
+/* eslint max-len: 0 */
 
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link, graphql } from 'gatsby';
+import styled, {keyframes} from 'react-emotion';
+import { Container, Layout } from 'elements';
 import Footer from '../components/Footer';
 import Wave from '../elements/Wave'
 import Img from 'gatsby-image'
 
-
+import Button from '../components/Button';
 import Hero from '../utilities/Hero';
 
-import Layout from './../elements/Layout'
-import Home from 'components/mfort/home'
+
 const Text = styled.p`
   text-align: center;
   font-family: ${props => props.theme.fontFamily.heading};
@@ -64,9 +66,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const IndexPage = (data) => (
-  <Layout >
-    <Wrapper>
+const Index = (data) => { 
+  console.log(data.data);
+  return (
+    <Layout>
+      <Wrapper>
         <Hero>
         <React.Fragment>
         equilibrio entre aprender, construir y enseñar
@@ -76,12 +80,34 @@ const IndexPage = (data) => (
         <Wave />
         <Img fluid={data.data.contentfulIndex.frontImage.fluid} />
       </Wrapper>
-    <Home />
-    <Footer/>
-  </Layout>
-)
 
-
+      
+  
+      
+       
+      <Container>
+        <Text>
+          Ich entwerfe, gestalte und entwickle plattformübergreifende Design-Konzepte, um das volle Potential aus deiner
+          Marke herauszuholen. <br />
+          <Link to="/projekte">
+            <Button type="primary">Projekte</Button>
+          </Link>
+        </Text>
+      </Container>
+      <Container>
+        
+        <Text>
+          Mit ebenso viel Leidenschaft schreibe ich über Design- und Coding-Themen und gebe mein Wissen in Form von
+          Tutorials weiter. <br />
+          <Link to="/blog">
+            <Button type="secondary">Blog</Button>
+          </Link>
+        </Text>
+      </Container>
+      <Footer />
+    </Layout>
+  );
+}
 export const query = graphql`
   query
   {
@@ -100,4 +126,7 @@ export const query = graphql`
     }
   }`
 
-export default IndexPage
+export default Index;
+
+
+

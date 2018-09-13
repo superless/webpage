@@ -30,7 +30,13 @@ module.exports = {
   shareImage: '/logos/share.jpg', // Open Graph Default Share Image. 1200x1200 is recommended
   shareImageWidth: 900, // Change to the width of your default share image
   shareImageHeight: 600, // Change to the height of your default share image
-  
+  social: [
+    { name: "Facebook", url: 'https://www.facebook.com/mintfortbank' },
+    { name: "Twitter", url: 'https://twitter.com/mintfort' },
+    { name: "Linkedin", url: 'https://www.linkedin.com/company/mintfort/' },
+    { name: "Medium", url: 'https://medium.com/mintfort' },
+    { name: "Github", url: 'https://github.com/MintFort' }
+  ],
   
 
   copyright: 'Copyright © 2018 TriFenix', // Copyright string for the RSS feed
