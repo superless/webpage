@@ -114,6 +114,27 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: `${__dirname}/src/pages`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'data',
+        path: `${__dirname}/src/data`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/assets`
+      }
+    },
     "gatsby-plugin-netlify",
     /* Must be placed at the end */
     "gatsby-plugin-offline",
