@@ -53,7 +53,7 @@ const Navigation = () => (
       <LogoText>TriFenix</LogoText>
     </StyledLink>
     <Nav>
-      <Link to="/projekte">Projekte</Link>
+      
       <Link to="/blog">Blog</Link>
       <Link to="/kontakt">Kontakt</Link>
     </Nav>
