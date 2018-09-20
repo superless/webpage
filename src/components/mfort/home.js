@@ -13,59 +13,104 @@ import Subscribe from './formRegister'
 import SectionWatch from './sectionWatch'
 import SectionPhone from './sectionPhone'
 
-import { hero, imagine, buy, access, cards, boxes, control, form } from 'data/home.yml'
+import {  access,  boxes, control, form } from 'data/home.yml'
 import { theme } from 'library/utils'
 import { retinaImage } from 'polished';
+import DividerStart from './backgrounds/start'
 
 const Home = () => {
-  const dataArray = Object.keys(cards).map((k) => cards[k])
+  
   return (
     <StaticQuery
       query={graphql`
         query {
-          img: file(relativePath: { regex: "/hero_home/"}) {
-            childImageSharp {
-              fixed(width: 340) {
-                ...GatsbyImageSharpFixed_noBase64
+          index : contentfulIndex(text : {eq : "index"}){
+            wideContent{
+              titulo
+              imagen{
+                title
+                fluid(maxWidth: 657) {
+                  ...GatsbyContentfulFluid_withWebp_noBase64
+                }
               }
+              contenido {
+                  childMarkdownRemark{
+                    html : rawMarkdownBody
+                  }
+                
+              }
+              blog{
+                slug
+              }
+            }
+            cards{
+              id
+              idNumber
+              titulo
+               contenido {
+                  childMarkdownRemark{
+                    html
+                  }
+                
+              }
+              imagen{
+                title
+                file{
+                  url
+                }
+                
+              }
+              
             }
           }
         }
       `}
-      render={({ img }) => (
+      render={({ index }) => (
         <>
           
-          <ScrollableAnchor id='imagine'>
+          <ScrollableAnchor id={index.wideContent[0].blog.slug}>
             <div>
               <Section
-                title={imagine.title}
-                content={imagine.subTitle}
+                title={index.wideContent[0].titulo}
+                content={index.wideContent[0].contenido.childMarkdownRemark.html}
                 padding={'14vh 0 8vh'}
+                
               />
             </div>
           </ScrollableAnchor>
-          <SectionWatch />
-          <Section
-            title={buy.title}
-            content={buy.subTitle}
-            padding={'4vh 0'}
-            color={{
-              background: theme.gray
-            }}
-          />
-          <SectionPhone />
+          <SectionPhone image={index.wideContent[0].imagen}/>
+          <DividerStart />
+          <ScrollableAnchor id={index.wideContent[1].blog.slug}>
+            <div>
+              <Section
+                title={index.wideContent[1].titulo}
+                content={index.wideContent[1].contenido.childMarkdownRemark.html}
+                padding={'14vh 0 8vh'}
+                color={{
+                  background: theme.whiteFont
+                }}
+              />
+            </div>
+          </ScrollableAnchor>
+          <SectionPhone image={index.wideContent[1].imagen}/>
+          
+          
+          
           <SectionCards>
-            {dataArray.map(card => {
-              console.log(cards)
-              return (
-                <Card
-                  key={card.id}
-                  title={card.title}
-                  img={card.img}
-                  card={card.id}
-                />
-              );
-            }
+            { index.cards.map(card => 
+              {
+                console.log(card)
+
+                return (
+                  <Card
+                    key={card.idNumber}
+                    title={card.titulo}
+                    img={card.imagen.file.url}
+                    card={card.idNumber}
+                  />
+                )
+
+              }
               )
             }
           </SectionCards>

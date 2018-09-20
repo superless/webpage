@@ -11,7 +11,7 @@ const Background = styled.section`
     background: ${color};
   `}
   ${({ src }) => src && css`
-    background: ${src.includes('blue') && theme.blue} url(${require('../' + src)});
+    background: ${src.includes('blue') && theme.blue} url(${require('../../' + src)});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

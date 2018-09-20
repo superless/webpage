@@ -7,6 +7,7 @@ const headroom = css`
     width: 100%;
     z-index: 2000;
   }
+  
   .headroom {
     display: flex;
     justify-content: space-between;

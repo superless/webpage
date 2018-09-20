@@ -20,6 +20,9 @@ injectGlobal`
       border-radius: ${theme.borderRadius.default};
     }
   }
+  main {
+    overflow: hidden;
+  }
   .gatsby-resp-iframe-wrapper {
     margin-bottom: 2rem;
   }
@@ -31,7 +34,7 @@ const Layout = ({ children }) => (
     <React.Fragment>
       <SEO />
       <Navigation />
-      {children}
+      <main>{children}</main>
     </React.Fragment>
   </ThemeProvider>
 );

@@ -5,13 +5,13 @@ hero:
   img: assets/images/hero_home.png
 
 imagine:
-  title: Imagine a bank which is independent and currency agnostic
-  subTitle: Where transactions take seconds and assets are being held well protected by the consensus of the blockchain. Mintfort offers the first bank account that handles crypto assets the same way as traditional currencies. Say good bye to messy wallets and complicated procedures.
+  title: Construimos aplicaciones web progresivas
+  subTitle: En estados unidos, nacen cada día muchas start-ups relacionadas con Internet, los servicios de tecnología están al servicios de estas empresas a costos muy bajos, casi todos los servicios en la nube son gratuitos inicialmente, eso permite que la posibilidad de tener una empresa exitosa sea más fácil para ellos que para nosotros, hasta ahora!!.
   background: assets/svg/dotted_side_blue_background.svg
 
 buy:
-  title: Buy, spend, manage your assets anytime, anywhere
-  subTitle: "If it is to pay your rent or to purchase a rubber duck on amazon: Using bitcoin has never been so easy. Benefit from the most advanced banking experience and spend virtual currencies globally. The Mintfort debit card is being accepted at millions of POS worldwide."
+  title: Las grandes empresas apuestan por PWA
+  subTitle: "Microsoft, Google y Apple ya han adoptado PWA es sus respectivos sistemas operativos"
   img: assets/images/banking_made_simple.png
   background: assets/svg/dotted_white_background-01.svg
 
@@ -25,11 +25,14 @@ cards:
       id: 2
       title: Control all your assets where ever you want.
       img: assets/images/payment_high.jpg
-    
   c :
-      id: 3
-      title: Receive your payroll in Bitcoin and more.
-      img: assets/images/payroll_high.gif
+    id: 3
+    title: Receive your payroll in Bitcoin and more.
+    img: assets/images/payroll_high.gif
+    
+ 
+
+  
    
 
 access:

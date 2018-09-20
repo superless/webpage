@@ -7,9 +7,11 @@ import { SubHeader, Img } from 'library/index'
 import { rem, flex, phone, mobile, theme } from 'library/utils'
 
 const back = {
-  1: "#1b243f",
-  2: "#f1f1f1",
-  3: "#96c1e3"
+  1:"#1b243f",
+  2: "#1b243f",
+  3: "#1b243f",
+  4: "#1b243f",
+  5: "#96c1e3"
 }
 
 const Wrapper = styled.div`
@@ -47,7 +49,7 @@ export const Card = ({ img, title, card }) => (
       <Fade>
         <SubHeader
           style={{ margin: 0, padding: '0 30px' }}
-          color={card === 2 ? theme.blue : '#fff'}
+          color={card === 20 ? theme.blue : '#fff'}
         >
           {title}
         </SubHeader>
@@ -56,7 +58,7 @@ export const Card = ({ img, title, card }) => (
     <Fade delay={200}>
       <Img
         alt={title}
-        src={require('../../' + img)}
+        src={img}
       />
     </Fade>
   </Wrapper>

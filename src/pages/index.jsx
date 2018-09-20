@@ -9,18 +9,9 @@ import Img from 'gatsby-image'
 
 import Hero from '../utilities/Hero';
 
-import Layout from './../elements/Layout'
+import {Layout, Container} from './../elements'
 import Home from 'components/mfort/home'
-const Text = styled.p`
-  text-align: center;
-  font-family: ${props => props.theme.fontFamily.heading};
-  font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  max-width: 850px;
-  margin: 5rem auto;
-  text-shadow: ${props => props.theme.shadow.text.big};
-`;
+
 const pulse = keyframes`
   0% {
     transform: scale(1);
@@ -63,20 +54,26 @@ const Wrapper = styled.div`
     }
   }
 `;
-
+const Base = styled.div`
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+`;
 const IndexPage = (data) => (
-  <Layout >
+  <Layout>
     <Wrapper>
         <Hero>
-        <React.Fragment>
-        equilibrio entre aprender, construir y enseñar
-                </React.Fragment>
+        <h1>
+            equilibrio entre aprender, construir y enseñar
+                </h1>
         </Hero>
         
         <Wave />
         <Img fluid={data.data.contentfulIndex.frontImage.fluid} />
       </Wrapper>
-    <Home />
+      <Home/>
+    
     <Footer/>
   </Layout>
 )
@@ -88,14 +85,10 @@ export const query = graphql`
     contentfulIndex(text : {eq : "index"}){
       frontImage{
            title
-          fluid(maxWidth: 900, quality: 85) {
+          fluid(maxWidth: 1200, quality: 100) {
             ...GatsbyContentfulFluid_withWebp_noBase64
           }
-          ogimg: resize(width: 1800) {
-            src
-            width
-            height
-          }
+          
       }
     }
   }`

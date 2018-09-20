@@ -55,7 +55,7 @@ const Phone = ({ image }) => (
       }}
       alt='Mintfort Crypto Phone'
       title='Mintfort Crypto Phone'
-      fluid={image.childImageSharp.fluid}
+      fluid={image.fluid}
     />
   </PhoneWrapper>
 )
@@ -64,30 +64,16 @@ Phone.propTypes = {
   image: PropTypes.object.isRequired
 }
 
-const SectionPhone = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        phone: file(relativePath: { regex: "/crypto_phone/"}) {
-          childImageSharp {
-            fluid(maxWidth: 657) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
-      }
-    `}
-    render={({ phone }) => (
+const SectionPhone = ({image}) =>(
       <Wrapper>
         <DividerEnd />
         <ImageWrapper>
           <Fade>
-            <Phone image={phone}/>
+            <Phone image={image}/>
           </Fade>
         </ImageWrapper>
       </Wrapper>
-    )}
-  />
-)
+    )
+
 
 export default SectionPhone

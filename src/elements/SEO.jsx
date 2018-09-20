@@ -147,6 +147,12 @@ class SEO extends Component {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:image" content={image} />
         <meta name="twitter:description" content={description} />
+        <title>{title}</title>
+        <script type="text/javascript">
+     
+          var w=window,d=document,e=d.documentElement,g=d.getElementsByTagName('body')[0],x=w.innerWidth||e.clientWidth||g.clientWidth,y=w.innerHeight||e.clientHeight||g.clientHeight;
+    
+        </script>
       </Helmet>
     )
   }

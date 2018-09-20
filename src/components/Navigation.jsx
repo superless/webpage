@@ -55,7 +55,7 @@ const Navigation = () => (
     <Nav>
       
       <Link to="/blog">Blog</Link>
-      <Link to="/kontakt">Kontakt</Link>
+      <Link to="/kontakt">Contacto</Link>
     </Nav>
   </Headroom>
 );

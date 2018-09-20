@@ -2,12 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
-import styled from 'react-emotion';
+import styled , {keyframes}from 'react-emotion';
 import { Container, Layout } from 'elements';
 import config from '../../config/website';
 import ItemBlog from '../components/ItemBlog';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import Wave from '../elements/Wave'
+import Img from 'gatsby-image'
+
+
+import Hero from '../utilities/Hero';
 
 const Base = styled.div`
   margin-top: 2.5rem;
@@ -16,13 +21,65 @@ const Base = styled.div`
   flex-direction: column;
 `;
 
+const pulse = keyframes`
+  0% {
+    transform: scale(1);
+    animation-timing-function: ease-in;
+  }
+  25% {
+    animation-timing-function: ease-out;
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.12);
+    animation-timing-function: ease-in;
+  }
+  to {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+`;
+
+const Wrapper = styled.div`
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  .gatsby-image-wrapper {
+    height: 600px;
+    img {
+      animation: ${pulse} 30s infinite;
+    }
+  }
+  @media (max-width: ${props => props.theme.breakpoints.m}) {
+    height: 500px;
+    .gatsby-image-wrapper {
+      height: 500px;
+    }
+  }
+  @media (max-width: ${props => props.theme.breakpoints.s}) {
+    height: 400px;
+    .gatsby-image-wrapper {
+      height: 400px;
+    }
+  }
+`;
+
+
 const Blog = ({
   data
 }) => (
   
   <Layout>
-    <Helmet title={`Blog | ${config.siteTitle}`} />
-    <Header title="Blog">Nustros blogs, aprende de nuevas tecnologías</Header>
+    <Wrapper>
+        <Hero>
+        <h1>
+              Nuestros blogs, aprende con nosotros
+                </h1>
+        </Hero>
+        
+        <Wave />
+        <Img fluid={data.image.imagen.fluid} />
+      </Wrapper>
     <Container type="big">
       <Base>
         {data.allContentfulPost.edges.map(post => (
@@ -56,7 +113,21 @@ export default Blog;
 
 export const pageQuery = graphql`
 {
-  allContentfulPost{
+  image:  contentfulFondos(nombre:{eq:"blog"}){
+    imagen{
+      title
+      fluid(maxWidth: 900, quality: 85) {
+        ...GatsbyContentfulFluid_withWebp_noBase64
+      }
+      ogimg: resize(width: 1800) {
+        src
+        width
+        height
+      }
+    }
+  }
+
+  allContentfulPost: allContentfulPost{
     edges{
       node{
         slug

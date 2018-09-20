@@ -28,9 +28,7 @@ configureAnchors({
 //     ${transitions('color 0.1s ease')};
 //   }
 
-//   main {
-//     overflow: hidden;
-//   }
+
 
 //   button, input {
 //     &:focus {

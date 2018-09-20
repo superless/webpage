@@ -19,18 +19,20 @@ const Tag = ({
 }) => {
  
   let {0:first} = data.allContentfulTag.edges;
- 
   
+  let posts = first.node.post
+  
+
   return (
   <Layout>
     <Helmet title={`${tag} | ${config.siteTitle}`} />
-    <Header title={tag}>
-      
-      <StyledLink to="/tags">Todos los tags</StyledLink>
-    </Header>
+  
     <Container>
-      {first.node.post.map(post=>{
+      {
+        
+        posts.map(post=>{
           
+
           return (
             <ItemTagCategory
               key={post.key}
