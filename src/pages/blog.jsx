@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import styled , {keyframes}from 'react-emotion';
-import { Container, Layout } from 'elements';
-import config from '../../config/website';
+import { Container, Layout } from '../elements';
+import ScrollableAnchor from 'react-scrollable-anchor'
 import ItemBlog from '../components/ItemBlog';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
+import Subscribe from '../components/mfort/formRegister'
 import Wave from '../elements/Wave'
 import Img from 'gatsby-image'
 
@@ -97,6 +97,7 @@ const Blog = ({
         ))}
       </Base>
     </Container>
+    
     <Footer />
   </Layout>
 );

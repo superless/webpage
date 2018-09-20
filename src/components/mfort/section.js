@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'react-emotion'
 import Fade from 'react-reveal/Fade'
 
-import { Container, Header, Paragraph, Img } from 'library/index'
-import { rem, theme, phone } from 'library/utils'
+import { Container, Header, Paragraph, Img } from '../../library/index'
+import { rem, theme, phone } from '../../library/utils'
 
 const Background = styled.section`
   ${({ color }) => css`

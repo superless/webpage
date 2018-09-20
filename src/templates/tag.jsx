@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import styled from 'react-emotion';
 import Helmet from 'react-helmet';
-import { Container, Layout } from 'elements';
+import { Container, Layout } from '../elements';
 import config from '../../config/website';
 import Footer from '../components/Footer';
-import Header from '../components/Header';
+
 import ItemTagCategory from '../components/ItemTagCategory';
 
 const StyledLink = styled(Link)`

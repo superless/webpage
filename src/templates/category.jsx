@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import styled from 'react-emotion';
 import Helmet from 'react-helmet';
-import { Container, Layout } from 'elements';
+import { Container, Layout } from '../elements';
 
 import Footer from '../components/Footer';
 import Header from '../components/Header';

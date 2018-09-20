@@ -1,6 +1,6 @@
 import Typography from "typography"
 
-import { theme } from 'library/utils'
+import { theme } from './utils'
 
 const typography = new Typography({
   googleFonts: [

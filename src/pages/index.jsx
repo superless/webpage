@@ -9,8 +9,8 @@ import Img from 'gatsby-image'
 
 import Hero from '../utilities/Hero';
 
-import {Layout, Container} from './../elements'
-import Home from 'components/mfort/home'
+import {Layout} from './../elements'
+import Home from '../components/mfort/home'
 
 const pulse = keyframes`
   0% {

@@ -3,7 +3,7 @@ import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
-import { hideS } from 'utilities';
+import { hideS } from '../utilities';
 import Tags from './Tags';
 
 

@@ -1,10 +1,10 @@
 /* eslint max-len: 0 */
 
 import React from 'react';
-import PropTypes from 'prop-types';
+
 import { Link, graphql } from 'gatsby';
 import styled, {keyframes} from 'react-emotion';
-import { Container, Layout } from 'elements';
+import { Container, Layout } from '../elements';
 import Footer from '../components/Footer';
 import Wave from '../elements/Wave'
 import Img from 'gatsby-image'

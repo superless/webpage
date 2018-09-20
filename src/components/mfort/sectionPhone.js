@@ -6,7 +6,7 @@ import styled, { css } from 'react-emotion'
 import Fade from 'react-reveal/Fade'
 
 import DividerEnd from './backgrounds/end'
-import { flex, phone, mobile, rem, theme } from 'library/utils'
+import { flex, phone, mobile, rem, theme } from '../../library/utils'
 
 const Wrapper = styled.div`
   position: relative;

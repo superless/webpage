@@ -4,7 +4,7 @@ import styled from 'react-emotion';
 import {Link} from 'gatsby';
 import Img from 'gatsby-image';
 import kebabCase from 'lodash/kebabCase';
-import { hideS } from 'utilities';
+import { hideS } from '../utilities';
 
 const Wrapper = styled.article`
   display: flex;

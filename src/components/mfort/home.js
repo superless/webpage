@@ -13,8 +13,8 @@ import Subscribe from './formRegister'
 import SectionWatch from './sectionWatch'
 import SectionPhone from './sectionPhone'
 
-import {  access,  boxes, control, form } from 'data/home.yml'
-import { theme } from 'library/utils'
+import {  access,  boxes, control, form } from '../../data/home.yml'
+import { theme } from '../../library/utils'
 import { retinaImage } from 'polished';
 import DividerStart from './backgrounds/start'
 
@@ -127,10 +127,12 @@ const Home = () => {
             content={control.subTitle}
             padding={'20vh 0 0'}
           />
-          <Subscribe
-            title={form.title}
-            button={form.button}
-          />
+          <ScrollableAnchor id="contact">
+            <Subscribe
+              title={form.title}
+              button={form.button}
+            />
+          </ScrollableAnchor>
         </>
       )}
     />

@@ -1,11 +1,11 @@
 /* eslint no-unused-expressions: 0 */
 
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import styled from 'react-emotion';
 import Headroom from 'react-headroom';
 import Logo from '../icons/Logo';
-
+import { goToAnchor,  configureAnchors }  from 'react-scrollable-anchor'
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -46,18 +46,33 @@ const Nav = styled.nav`
   }
 `;
 
-const Navigation = () => (
-  <Headroom calcHeightOnResize disableInlineStyles>
-    <StyledLink to="/">
-      <Logo />
-      <LogoText>TriFenix</LogoText>
-    </StyledLink>
-    <Nav>
-      
-      <Link to="/blog">Blog</Link>
-      <Link to="/kontakt">Contacto</Link>
-    </Nav>
-  </Headroom>
-);
+
+
+class Navigation extends Component {
+  componentWillMount() {
+    configureAnchors({offset: 300, scrollDuration: 600})
+  }
+  render() {
+    return (
+      <Headroom calcHeightOnResize disableInlineStyles>
+        <StyledLink to="/">
+          <Logo />
+          <LogoText>TriFenix</LogoText>
+        </StyledLink>
+        <Nav>
+          
+          <Link to="/blog">Blog</Link>
+          <Link to="#contact" onClick={()=>goToAnchor("contact")}>Contacto</Link>
+        </Nav>
+      </Headroom>
+    );
+  }
+}
+
+
 
 export default Navigation;
+
+
+
+

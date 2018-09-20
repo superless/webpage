@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { css } from 'react-emotion'
 // import Fade from 'react-reveal/Fade'
 //
-import { mobile } from 'library/utils'
+import { mobile } from '../../library/utils'
 // import { Img } from 'library/index'
 
 import DividerStart from './backgrounds/start'

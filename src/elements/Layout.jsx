@@ -6,8 +6,8 @@ import { injectGlobal } from 'emotion';
 import { ThemeProvider } from 'emotion-theming';
 import 'typeface-montserrat';
 import 'typeface-istok-web';
-import { reset, headroom } from 'styles';
-import { SEO } from 'elements';
+import { reset, headroom } from '../styles';
+import { SEO } from '../elements';
 import Navigation from '../components/Navigation';
 import theme from '../../config/theme';
 

@@ -7,8 +7,8 @@ import styled, { css } from 'react-emotion'
 
 import StartPageBackground from './backgrounds/pageStart'
 
-import { hover, rem, transitions, navHeight, theme, flex, phone, mobile } from 'library/utils'
-import { Container, Title, Header, SubHeader, Button } from 'library/index'
+import { hover, rem, transitions, navHeight, theme, flex, phone, mobile } from '../../library/utils'
+import { Container, Title, Header, SubHeader, Button } from '../../library/index'
 
 const Wrapper = styled.section`
   height: 100vh;

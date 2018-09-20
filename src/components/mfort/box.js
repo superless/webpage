@@ -5,8 +5,8 @@ import Fade from 'react-reveal/Fade'
 import Waypoint from 'react-waypoint'
 import MtSvgLines from 'react-mt-svg-lines'
 
-import { Paragraph, Container, ContaninerBox } from 'library/index'
-import { rem, phone, theme, flex, mobile } from 'library/utils'
+import { Paragraph, Container, ContaninerBox } from '../../library/index'
+import { rem, phone, theme, flex, mobile } from '../../library/utils'
 
 const Section = styled.section`
   padding: ${rem(30)};

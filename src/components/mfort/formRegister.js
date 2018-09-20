@@ -7,8 +7,8 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 
 import EndPageBackground from './backgrounds/pageEnd'
 
-import { Header, Button } from 'library/index'
-import { flex, rem, theme, phone } from 'library/utils'
+import { Header, Button } from '../../library/index'
+import { flex, rem, theme, phone } from '../../library/utils'
 
 const Wrapper = styled.section`
   height: 900px;

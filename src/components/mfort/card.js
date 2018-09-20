@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'react-emotion'
 import Fade from 'react-reveal/Fade'
 
-import { SubHeader, Img } from 'library/index'
-import { rem, flex, phone, mobile, theme } from 'library/utils'
+import { SubHeader, Img } from '../../library/index'
+import { rem, flex, phone, mobile, theme } from '../../library/utils'
 
 const back = {
   1:"#1b243f",

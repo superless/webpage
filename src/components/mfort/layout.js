@@ -9,7 +9,7 @@ import { configureAnchors } from 'react-scrollable-anchor'
 
 
 
-import { theme, hover, transitions } from 'library/utils'
+import { theme, hover, transitions } from '../../library/utils'
 
 configureAnchors({
   offset: -60,

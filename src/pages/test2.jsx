@@ -10,7 +10,8 @@ import Img from 'gatsby-image'
 import Hero from '../utilities/Hero';
 
 import Layout from '../elements/Layout'
-import Home from 'components/mfort/home'
+import Home from '../components/mfort/home'
+
 const Text = styled.p`
   text-align: center;
   font-family: ${props => props.theme.fontFamily.heading};
