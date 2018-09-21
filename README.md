@@ -1,22 +1,17 @@
-# lekoarts.de
-> ars aurea
-
-My personal portfolio & blog.
+# trifenix.io
+# trifenix.com
 
 ## Development
 
-Installation:
+Instalación:
 ```bash
 yarn
 ```
 
-Starting the local development server:
+Iniciar el servidor local de desarrollo:
 ```bash
 yarn run dev
 ```
 
 ## License
-
-Only for educational purposes! You are **not** allowed to use this site publicly and/or commercially. 
-
-You are **not** permitted to use, modify, or share the software for any purpose other than for private educational purposes.
+MIT
