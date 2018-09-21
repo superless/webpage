@@ -65,7 +65,7 @@ const IndexPage = (data) => (
     <Wrapper>
         <Hero>
         <h1>
-            equilibrio entre aprender, construir y enseñar
+            Equilibrio entre <font size="10" color="purple">Aprender</font>, <font size="10" color="#522583">Construir</font> y <font size="10" color="#d85610">Enseñar</font>...
                 </h1>
         </Hero>
         
