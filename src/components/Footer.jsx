@@ -96,7 +96,7 @@ const Footer = ({ children }) => {
           </Important>
           <Item>
             <Link to="/impressum">Impressum</Link>
-            <Link to="/datenschutz">Políticas de Privacidad.¿<</Link>
+            <Link to="/datenschutz">Políticas de Privacidad.</Link>
           </Item>
           <Item>
           <a href="https://www.facebook.com/trifenix.io" target="_blank" rel="noopener noreferrer">
