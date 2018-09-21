@@ -15,7 +15,7 @@ const ErrorPage = () => (
     <Container>
       <p />
       <h1>
-        Oh. Hier ist wohl was schiefgelaufen{' '}
+        Oh. La pagina que buscabas no se encuentra{' '}
         <span role="img" aria-label="thinking">
           🤔
         </span>
