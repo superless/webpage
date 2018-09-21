@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+
 import ScrollableAnchor from 'react-scrollable-anchor'
 import { graphql, StaticQuery } from 'gatsby'
 
@@ -10,7 +10,7 @@ import Section from './section'
 import { SectionCards, Card } from './card'
 import SectionBoxes from './box'
 import Subscribe from './formRegister'
-import SectionWatch from './sectionWatch'
+
 import SectionPhone from './sectionPhone'
 
 import {  access,  boxes, control, form } from '../../data/home.yml'
@@ -46,6 +46,9 @@ const Home = () => {
             cards{
               id
               idNumber
+              blog {
+                slug
+              }
               titulo
                contenido {
                   childMarkdownRemark{
@@ -107,6 +110,7 @@ const Home = () => {
                     title={card.titulo}
                     img={card.imagen.file.url}
                     card={card.idNumber}
+                    slug = {card.blog.slug}
                   />
                 )
 

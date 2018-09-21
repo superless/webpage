@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'react-emotion'
 import Fade from 'react-reveal/Fade'
-
+import { Link } from 'gatsby';
 import { SubHeader, Img } from '../../library/index'
 import { rem, flex, phone, mobile, theme } from '../../library/utils'
 
@@ -43,18 +43,20 @@ const Text = styled.div`
   `)}
 `
 
-export const Card = ({ img, title, card }) => (
+export const Card = ({ img, title, card, slug }) => (
   <Wrapper card={card}>
-    <Text>
-      <Fade>
-        <SubHeader
-          style={{ margin: 0, padding: '0 30px' }}
-          color={card === 20 ? theme.blue : '#fff'}
-        >
-          {title}
-        </SubHeader>
-      </Fade>
-    </Text>
+    <Link to={slug}>
+      <Text>
+        <Fade>
+          <SubHeader
+            style={{ margin: 0, padding: '0 30px' }}
+            color={card === 20 ? theme.blue : '#fff'}
+          >
+            {title}
+          </SubHeader>
+        </Fade>
+      </Text>
+    </Link>
     <Fade delay={200}>
       <Img
         alt={title}
