@@ -96,27 +96,34 @@ const Footer = ({ children }) => {
           </Important>
           <Item>
             <Link to="/impressum">Impressum</Link>
-            <Link to="/datenschutz">Datenschutzerklärung</Link>
+            <Link to="/datenschutz">Políticas de Privacidad.</Link>
           </Item>
           <Item>
-            <a href="https://www.behance.net/lekoarts" target="_blank" rel="noopener noreferrer">
-              Behance
+          <a href="https://www.facebook.com/trifenix.io" target="_blank" rel="noopener noreferrer">
+               <img src="https://www.shareicon.net/data/48x48/2015/08/28/91997_facebook_512x512.png"></img>
+              </a>
+              <a href="https://www.twitter.com/trifenix_io" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.shareicon.net/data/48x48/2015/08/28/91999_blog_512x512.png"></img>
+              </a>
+              <a href="https://www.instagram.com/trifenix.io/" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.shareicon.net/data/48x48/2015/08/28/92014_camera_512x512.png"></img>
             </a>
-            <a href="https://dribbble.com/LekoArts" target="_blank" rel="noopener noreferrer">
-              Dribbble
+
+           <a href="https://github.com/trifenix" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.shareicon.net/data/48x48/2015/08/28/92005_social-media_512x512.png"></img>
             </a>
-            <a href="https://www.facebook.com/lekoarts.de" target="_blank" rel="noopener noreferrer">
-              Facebook
+
+ <a href="https://www.linkedin.com/company/trifenix" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.shareicon.net/data/48x48/2015/08/28/92003_social-media_512x512.png"></img>
             </a>
-            <a href="https://github.com/LeKoArts" target="_blank" rel="noopener noreferrer">
-              GitHub
+
+            <a href="https://www.youtube.com/trifenix_io" target="_blank" rel="noopener noreferrer">
+              <img src="https://www.shareicon.net/data/48x48/2015/08/28/91998_video_512x512.png"></img>
             </a>
-            <a href="https://www.instagram.com/lekoarts.de" target="_blank" rel="noopener noreferrer">
-              Instagram
-            </a>
+           
           </Item>
         </Content>
-        <Copyright>Copyright © {date}. LekoArts. Alle Rechte vorbehalten.</Copyright>
+        <Copyright>Copyright © {date}. TRIFENIX SpA. Todos los derechos reservados.</Copyright>
       </Container>
     </Wrapper>
   );
