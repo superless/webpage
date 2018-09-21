@@ -143,7 +143,18 @@ module.exports = {
     },
     "gatsby-plugin-netlify",
     /* Must be placed at the end */
-    "gatsby-plugin-offline",
+    {
+      resolve: "gatsby-plugin-offline",
+      options : {
+        runtimeCaching: [
+          {
+            // Add runtime caching of various page resources.
+            urlPattern: /\.(?:png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
+            handler: `staleWhileRevalidate`,
+          },
+        ]
+      }
+    },
     {
       resolve: "gatsby-plugin-feed",
       options: {
