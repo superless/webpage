@@ -13,7 +13,7 @@ import {Layout} from './../elements'
 import Home from '../components/mfort/home'
 
 /**IMPORTACION LIBRERIA ANIMACION TEXTOS */
-import { Wave } from 'react-animated-text';
+import { Random } from 'react-animated-text';
 
 const pulse = keyframes`
   0% {
