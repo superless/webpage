@@ -15,16 +15,16 @@ const ErrorPage = () => (
     <Container>
       <p />
       <h1>
-        Oh. La pagina que buscabas no se encuentra{' '}
+        Oh. Parece que algo salio mal{' '}
         <span role="img" aria-label="thinking">
           🤔
         </span>
       </h1>
-      <h3>Die Seite, dasd die du aufrufen wolltest, existiert nicht mehr oder ist momentan nicht erreichbar.</h3>
+      <h3>La pagina que buscabas no esta en la ruta</h3>
       <p>
-        Um die Leere schnell zu überbrücken, kannst du zur <Link to="/">Homepage</Link> zurückkehren oder meine Videos
-        bingewatchen! Schreib mir gerne deine Videovorschläge auf{' '}
-        <a href="https://twitter.com/lekoarts_de" target="_blank" rel="nofollow noopener noreferrer">
+        Haz click aqui para volver al inicio <Link to="/">PAGINA DE INICIO</Link> o puedes volver atras
+        no te rindas.{' '}
+        <a href="https://www.twitter.com/trifenix_io" target="_blank" rel="nofollow noopener noreferrer">
           Twitter
         </a>{' '}
         <span role="img" aria-label="wink">
@@ -52,10 +52,10 @@ const ErrorPage = () => (
             width: '100%',
             height: '100%',
           }}
-          title="LekoArts Playlist"
-          width="560"
+          title="Never gonna give you up"
+          width="460"
           height="315"
-          src="https://www.youtube.com/embed/videoseries?list=PLB-cmN3u7PHJTB_4eeuo6Hy1Ts2HgKD-5"
+          src = "https://www.youtube.com/embed/dQw4w9WgXcQ"
           frameBorder="0"
           allowFullScreen
         />
