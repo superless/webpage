@@ -53,8 +53,8 @@ const Phone = ({ image }) => (
       style={{
         width: "100%"
       }}
-      alt='Mintfort Crypto Phone'
-      title='Mintfort Crypto Phone'
+      alt='PWA'
+      title='Progressive Web App'
       fluid={image.fluid}
     />
   </PhoneWrapper>
