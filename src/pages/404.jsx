@@ -22,7 +22,7 @@ const ErrorPage = () => (
       </h1>
       <h3>La pagina que buscabas no esta en la ruta</h3>
       <p>
-        Haz click aqui para volver al inicio<Link to="/">PAGINA DE INICIO</Link> o puedes volver atras
+        Haz click aqui para volver al inicio <Link to="/">PAGINA DE INICIO</Link> o puedes volver atras
         no te rindas.{' '}
         <a href="https://www.twitter.com/trifenix_io" target="_blank" rel="nofollow noopener noreferrer">
           Twitter
@@ -53,9 +53,9 @@ const ErrorPage = () => (
             height: '100%',
           }}
           title="Never gonna give you up"
-          width="560"
+          width="460"
           height="315"
-          src = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          src = "https://www.youtube.com/embed/dQw4w9WgXcQ"
           frameBorder="0"
           allowFullScreen
         />
