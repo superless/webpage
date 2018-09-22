@@ -88,9 +88,7 @@ const Footer = ({ children }) => {
         {children && <OptionalContent>{children}</OptionalContent>}
         <Content>
           <Important>
-            <a href="https://www.patreon.com/lekoarts" target="_blank" rel="noopener noreferrer">
-              Patreon
-            </a>
+            
             <Link to="/categories/tutorial">Tutorials</Link>
             <Link to="/categories/freebie">Freebies</Link>
           </Important>
@@ -99,6 +97,7 @@ const Footer = ({ children }) => {
             <Link to="/datenschutz">Políticas de Privacidad.</Link>
           </Item>
           <Item>
+            <div>
           <a href="https://www.facebook.com/trifenix.io" target="_blank" rel="noopener noreferrer">
                <img src="https://www.shareicon.net/data/48x48/2015/08/28/91997_facebook_512x512.png"></img>
               </a>
@@ -120,7 +119,7 @@ const Footer = ({ children }) => {
             <a href="https://www.youtube.com/trifenix_io" target="_blank" rel="noopener noreferrer">
               <img src="https://www.shareicon.net/data/48x48/2015/08/28/91998_video_512x512.png"></img>
             </a>
-           
+           </div>
           </Item>
         </Content>
         <Copyright>Copyright © {date}. TRIFENIX SpA. Todos los derechos reservados.</Copyright>

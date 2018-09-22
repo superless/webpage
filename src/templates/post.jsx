@@ -100,7 +100,7 @@ const PostTemplate = ({ data }) => {
         <Hero>
           <h1>{title}</h1>
           <Information>
-            {publishDate} &mdash; Lesezeit: {postNode.body.childMarkdownRemark.timeToRead} Min. &mdash; <span className={hideS}>Categoria: </span>
+            {publishDate} &mdash; Lectura de: {postNode.body.childMarkdownRemark.timeToRead} Min. &mdash; <span className={hideS}>Categoría: </span>
             <Link to={`/categories/${kebabCase(category)}`}>{postNode.category}</Link>
           </Information>
         </Hero>
@@ -112,12 +112,12 @@ const PostTemplate = ({ data }) => {
         <Line aria-hidden="true" />
         <TagList tags={tags} />
         <Note>
-          <span className={fontBold}>Interesse geweckt?</span> Lies alle Beiträge in der Kategorie{' '}
+          <span className={fontBold}>¿Te interesó?</span> Lee las otras publicaciónes en la categoría{' '}
           <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
         </Note>
       </Container>
       <Container>
-        <InfoText>Weitere Blogeinträge</InfoText>
+        <InfoText>Más informes en el Blog</InfoText>
         
       </Container>
       <Footer>
@@ -143,7 +143,7 @@ export const query = graphql`
         }
       }
       publishDate(formatString: "MMMM DD, YYYY")
-      publishDateISO: publishDate(formatString: "YYYY-MM-DD")
+      publishDateISO: publishDate(formatString: "DD-MM-YYYY")
       tags {
         title
         id
