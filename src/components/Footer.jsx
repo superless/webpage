@@ -89,7 +89,7 @@ const Footer = ({ children }) => {
         <Content>
           <Important>
             
-            <Link to="/categories/tutorial">Tutorials</Link>
+            <Link to="/blog">Blog</Link>
             <Link to="/categories/freebie">Freebies</Link>
           </Important>
           <Item>
