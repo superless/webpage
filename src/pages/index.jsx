@@ -12,6 +12,9 @@ import Hero from '../utilities/Hero';
 import {Layout} from './../elements'
 import Home from '../components/mfort/home'
 
+/**IMPORTACION LIBRERIA ANIMACION TEXTOS */
+import { Wave } from 'react-animated-text';
+
 const pulse = keyframes`
   0% {
     transform: scale(1);
@@ -60,6 +63,7 @@ const Base = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
 const IndexPage = (data) => (
   <Layout>
     <Wrapper>
@@ -67,6 +71,7 @@ const IndexPage = (data) => (
         <h1>
             Equilibrio entre <font size="10" color="purple">Aprender</font>, <font size="10" color="#522583">Construir</font> y <font size="10" color="#d85610">Enseñar</font>...
                 </h1>
+                <Random text="EXAMPLE TEXT" />
         </Hero>
         
         <Wave />
