@@ -54,7 +54,7 @@ const Phone = ({ image }) => (
         width: "100%"
       }}
       alt='PWA'
-      title='Progressive Web App'
+      title='Progressive Web Apps'
       fluid={image.fluid}
     />
   </PhoneWrapper>
