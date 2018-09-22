@@ -44,7 +44,7 @@ const ItemTagCategory = ({ category, path, title, date, timeToRead, tags, excerp
           <h1>{title}</h1>
         </Link>
         <Statistics>
-          {date} &mdash; Lesezeit: {timeToRead} Min. &mdash; <span className={hideS}>Kategorie: </span>
+          {date} &mdash; Lectura de: {timeToRead} Min. &mdash; <span className={hideS}>Kategorie: </span>
           <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
         </Statistics>
         {tags && <Tags tags={tags} />}

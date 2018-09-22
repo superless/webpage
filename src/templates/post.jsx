@@ -100,7 +100,7 @@ const PostTemplate = ({ data }) => {
         <Hero>
           <h1>{title}</h1>
           <Information>
-            {publishDate} &mdash; Lesezeit: {postNode.body.childMarkdownRemark.timeToRead} Min. &mdash; <span className={hideS}>Categoria: </span>
+            {publishDate} &mdash; Lectura de: {postNode.body.childMarkdownRemark.timeToRead} Min. &mdash; <span className={hideS}>Categoria: </span>
             <Link to={`/categories/${kebabCase(category)}`}>{postNode.category}</Link>
           </Information>
         </Hero>
