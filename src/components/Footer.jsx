@@ -121,9 +121,13 @@ const Footer = ({ children }) => {
            <style jsx>
                {
                 `
+                  .efectolink {
+                    max-width: 800px;
+                    min-width: 300px;
+                    display:flex;
+                  }
                   .efectolink a{
                     margin:0px;
-                    padding:3px;
                   }
                   .efectolink img:hover {
                       transform: translateY(-30px) scale(2);

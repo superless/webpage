@@ -70,10 +70,9 @@ const IndexPage = (data) => (
         <Hero>
         <h1>
             Equilibrio entre <font size="10" color="purple">Aprender</font>, <font size="10" color="#522583">Construir</font> y <font size="10" color="#d85610">Enseñar</font>...
-                </h1>
-                <Random text="EXAMPLE TEXT" />
+        </h1>
+        <Random text="DONDE ESTA ESTE TEXTO?" />
         </Hero>
-        
         <Wave />
         <Img fluid={data.data.contentfulIndex.frontImage.fluid} />
       </Wrapper>
