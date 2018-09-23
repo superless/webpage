@@ -80,7 +80,7 @@ boxes:
   h :
       id: 8
       title: Wallet
-      component: Wallet
+      component: Camarainst
    
 
 control:

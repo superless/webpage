@@ -73,7 +73,7 @@ const EfectoLink = styled.div`
     }
   img {
     &:hover {
-      transform: translateY(-30px) scale(2);
+      transform: translateY(-2px) scale(1.8);
       }
     }
 `;

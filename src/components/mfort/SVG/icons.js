@@ -95,3 +95,58 @@ export const Wallet = () => (
   </svg>
 
 )
+
+export const Camarainst = () => (
+<div>
+<div className="hoverEfect">
+<img className="slidecaption" src="https://www.shareicon.net/data/128x128/2017/07/13/888380_business_512x512.png"></img>
+</div>
+<style jsx>
+  {
+    ` .hoverEfect {
+      display:flex;
+      }
+      .hoverEfect img:hover {
+          transform: translateY(-30px) scale(2);
+      }
+      .slidecaption {
+        -webkit-animation-name: spinner; 
+        -webkit-animation-timing-function: linear; 
+        -webkit-animation-iteration-count: infinite; 
+        -webkit-animation-duration: 2s; 
+        animation-name: spinner; 
+        animation-timing-function: linear; 
+        animation-iteration-count: infinite; 
+        animation-duration: 2s; 
+        -webkit-transform-style: preserve-3d; 
+        -moz-transform-style: preserve-3d; 
+        -ms-transform-style: preserve-3d; 
+        transform-style: preserve-3d;
+        -webkit-transform-origin: center center;  /* Chrome, Safari */
+      }
+      @-webkit-keyframes spinner { 
+        from { 
+          -webkit-transform: rotateY(0deg); 
+        } 
+        to { 
+          -webkit-transform: rotateY(-360deg); 
+        } 
+      } 
+      @keyframes spinner { 
+        from { 
+          -moz-transform: rotateY(0deg); 
+          -ms-transform: rotateY(0deg); 
+          transform: rotateY(0deg); 
+        } 
+        to { 
+          -moz-transform: rotateY(-360deg); 
+          -ms-transform: rotateY(-360deg); 
+          transform: rotateY(-360deg); 
+        } 
+      }
+    `
+  }  
+</style>
+</div>
+)
+
