@@ -67,27 +67,23 @@ const IndexPage = (data) => (
   <Layout>
     <Wrapper>
         <Hero>
-<div class="content">
+          <div class="content">
   <div class="content__container">
     <p class="content__container__text">
-      Equilibrio entre
+      Equilibrio entre:
     </p>
     
     <ul class="content__container__list">
-      <li class="content__container__list__item"><font color="purple">Aprender</font></li>
-      <li class="content__container__list__item"><font color="orange">Construir</font></li>
-      <li class="content__container__list__item"><font color="green">Enseñar</font></li>
-      <li class="content__container__list__item"><font color="yellow">Innovar</font></li>
+      <li class="content__container__list__item"><font color="purple">aprender</font></li>
+      <li class="content__container__list__item"><font color="orange">enseñar</font></li>
+      <li class="content__container__list__item"><font color="green">construir</font></li>
+      <li class="content__container__list__item"><font color="yellow">innovar</font></li>
     </ul>
     
   </div>
 </div>
-
                 </Hero>
-
-
-        
-        
+           
         <Wave />
         <Img fluid={data.data.contentfulIndex.frontImage.fluid} />
       </Wrapper>

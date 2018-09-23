@@ -57,7 +57,7 @@ class Navigation extends Component {
       <Headroom calcHeightOnResize disableInlineStyles>
         <StyledLink to="/">
           <Logo />
-          <LogoText>TriFenix</LogoText>
+          <LogoText>TRIFENIX</LogoText>
         </StyledLink>
         <Nav>
           

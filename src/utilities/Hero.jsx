@@ -1,5 +1,6 @@
 import styled from 'react-emotion';
 
+
 const Hero = styled.div`
   position: absolute;
   top: 50%;
@@ -14,6 +15,7 @@ const Hero = styled.div`
   padding: 0 2rem;
   text-align: center;
 
+
   // css animacion titulo
 
   .content {
@@ -21,27 +23,38 @@ const Hero = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 160px;
+    height: 140px;
     overflow:hidden;
     
     font-family: 'Lato', sans-serif;
-    font-size: 55px;
+    font-size: 50px;
     line-height: 60px;
     color: #ecf0f1;
+    @media (max-width: ${1000 / 16}em) {
+      height: 100px;
+      font-size: 25px;
+      line-height: 60px;
+    }
     
     &__container {
-      font-weight: 600;
+      font-weight: 500;
       overflow: hidden;
-      height: 60px; //tamaño div dinamico
-      padding: 0 150px;
+      height: 60px; 
+      padding: 0 45px;
+     
+      @media (max-width: ${1000 / 16}em) {
+        padding: 0 20px;
+
+      }
+      
   
       &:before {
-        content: '<li>';
+        content: '{';
         left: 0;
       }
   
       &:after {
-        content: '</li>';
+        content: '}';
         position: absolute;
         right: 0;
       }
@@ -52,28 +65,37 @@ const Hero = styled.div`
         
         color: #d85610;
         font-size: 62px;
-        line-height: 55px;
+        line-height: 50px;
+        @media (max-width: ${1000 / 16}em) {
+          font-size: 34px;
+          line-height: 60px;
+        }
         
         -webkit-animation-name: opacity;
-        -webkit-animation-duration: 4s;
+        -webkit-animation-duration: 2s;
         -webkit-animation-iteration-count: infinite;
         animation-name: opacity;
-        animation-duration: 4s;
+        animation-duration: 2s;
         animation-iteration-count: infinite;
       }
   
       &__text {
         display: inline;
         float: left;
-        margin: 8;
+        margin: 0;
       }
   
       &__list {
         margin-top: 0;
-        padding-left: 390px;
+        padding-left: 340px;
         text-align: left;
         list-style: none;
         
+        @media (max-width: ${1000 / 16}em) {
+          padding-left: 155px;
+          
+        }
+
         -webkit-animation-name: change;
         -webkit-animation-duration: 10s;
         -webkit-animation-iteration-count: infinite;
@@ -84,6 +106,9 @@ const Hero = styled.div`
         &__item {
           line-height:60px;
           margin:0;
+                      
+          }
+         
         }
       }
     }
@@ -146,6 +171,7 @@ const Hero = styled.div`
   }
 
 
-`;
+  `;
+
 
 export default Hero;
