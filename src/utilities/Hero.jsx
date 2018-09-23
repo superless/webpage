@@ -63,7 +63,7 @@ const Hero = styled.div`
         position: absolute;
         top: 0;
         
-        color: #d85611;
+        color: #d85610;
         font-size: 62px;
         line-height: 50px;
         @media (max-width: ${1000 / 16}em) {
