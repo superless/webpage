@@ -11,7 +11,7 @@ import Hero from '../utilities/Hero';
 
 import Layout from '../elements/Layout'
 import Home from '../components/mfort/home'
-import TestDisqus from '../components/capabilities/TestDisqus';
+
 
 const Text = styled.p`
   text-align: center;
@@ -79,7 +79,7 @@ const IndexPage = (data) => (
         <Img fluid={data.data.contentfulIndex.frontImage.fluid} />
       </Wrapper>
     <Home />
-    <TestDisqus />
+   
     <Footer/>
   </Layout>
 )
