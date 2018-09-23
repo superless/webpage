@@ -10,10 +10,10 @@ import { flex, phone, mobile, rem, theme } from '../../library/utils'
 
 const Wrapper = styled.div`
   position: relative;
-  background: ${theme.gray};
+  background: white;
   overflow: hidden;
   width: 100%;
-  overflow-x: hidden;:
+  overflow-x: hidden;
 
   padding-bottom: ${rem(20)};
 

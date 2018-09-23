@@ -82,7 +82,7 @@ const Home = () => {
             </div>
           </ScrollableAnchor>
           <SectionPhone image={index.wideContent[0].imagen}/>
-          <DividerStart />
+         
           <ScrollableAnchor id={index.wideContent[1].blog.slug}>
             <div>
               <Section

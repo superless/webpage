@@ -19,7 +19,7 @@ const colors = {
   highlight: '#5b8bf7', // Light Blue
   white: {
     base: '#fff',
-    light: '#f0f0f0',
+    light: '#fff',
     blueish: '#d6e1ff',
     blue: '#a0afd7',
   },
