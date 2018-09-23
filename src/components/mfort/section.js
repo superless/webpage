@@ -21,6 +21,10 @@ const Background = styled.section`
   flex-direction: column;
 `
 
+const NoChange = styled.span`
+  color: #000;
+`
+
 const Wrapper = styled.div`
   width: 60%;
   text-align: center;
@@ -69,14 +73,14 @@ const Text = ({ title, content, color }) => (
         <Header
           style={{ fontWeight: 'bold' }}
         >
-          {title}
+          <NoChange> {title}</NoChange>
         </Header>
         <Fade delay={100}>
           {
             typeof content === 'string' ?
               <Paragraph
                 color={color && color.paragraph}>
-                {content}
+                <NoChange>{content}</NoChange>
               </Paragraph> :
               content
           }
