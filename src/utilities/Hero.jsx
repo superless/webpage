@@ -33,7 +33,7 @@ const Hero = styled.div`
       font-weight: 600;
       overflow: hidden;
       height: 60px; //tamaño div dinamico
-      padding: 0 60px;
+      padding: 0 25px;
   
       &:before {
         content: '{';
@@ -55,17 +55,17 @@ const Hero = styled.div`
         line-height: 55px;
         
         -webkit-animation-name: opacity;
-        -webkit-animation-duration: 2s;
+        -webkit-animation-duration: 4s;
         -webkit-animation-iteration-count: infinite;
         animation-name: opacity;
-        animation-duration: 2s;
+        animation-duration: 4s;
         animation-iteration-count: infinite;
       }
   
       &__text {
         display: inline;
         float: left;
-        margin: 0;
+        margin: 8;
       }
   
       &__list {

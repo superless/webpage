@@ -79,6 +79,7 @@ const IndexPage = (data) => (
       <li class="content__container__list__item"><font color="green">Enseñar</font></li>
       <li class="content__container__list__item"><font color="yellow">Innovar</font></li>
     </ul>
+    
   </div>
 </div>
 
