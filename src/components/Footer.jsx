@@ -72,8 +72,11 @@ const EfectoLink = styled.div`
     margin: 0;
     }
   img {
+    max-width: 48px;
+  min-width: 32px;
     &:hover {
-      transform: translateY(-2px) scale(1.8);
+
+      transform: translateY(0px) scale(1.2);
       }
     }
 `;
