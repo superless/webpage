@@ -63,6 +63,21 @@ const Item = styled.div`
   }
 `;
 
+const EfectoLink = styled.div`
+  display: flex;
+  max-width: 800px;
+  min-width: 300px;
+  justify-content: center;
+  a {
+    margin: 0;
+    }
+  img {
+    &:hover {
+      transform: translateY(-30px) scale(2);
+      }
+    }
+`;
+
 const Important = styled(Item)`
   font-size: 1.2rem;
   text-align: center;
@@ -98,7 +113,7 @@ const Footer = ({ children }) => {
             <Link to="/datenschutz">Políticas de Privacidad.</Link>
           </Item>
           <Item>
-            <div className="efectolink">
+            <EfectoLink>
               <a href="https://www.facebook.com/trifenix.io" target="_blank" rel="noopener noreferrer">
                 <img src="https://www.shareicon.net/data/48x48/2015/08/28/91997_facebook_512x512.png"></img>
               </a>
@@ -117,25 +132,7 @@ const Footer = ({ children }) => {
               <a href="https://www.youtube.com/trifenix_io" target="_blank" rel="noopener noreferrer">
                 <img src="https://www.shareicon.net/data/48x48/2015/08/28/91998_video_512x512.png"></img>
               </a>
-           </div>
-           <style jsx>
-               {
-                `
-                  .efectolink {
-                    max-width: 800px;
-                    min-width: 300px;
-                    display:flex;
-                  }
-                  .efectolink a{
-                    margin:0px;
-                  }
-                  .efectolink img:hover {
-                      transform: translateY(-30px) scale(2);
-                    }
-                  }
-                `
-               }  
-           </style>
+           </EfectoLink>
           </Item>
         </Content>
         <Copyright>Copyright © {date}. TRIFENIX SpA. Todos los derechos reservados.</Copyright>
