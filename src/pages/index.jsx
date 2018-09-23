@@ -13,7 +13,6 @@ import {Layout} from './../elements'
 import Home from '../components/mfort/home'
 
 /**IMPORTACION LIBRERIA ANIMACION TEXTOS */
-import { Random } from 'react-animated-text';
 
 const pulse = keyframes`
   0% {
@@ -68,11 +67,25 @@ const IndexPage = (data) => (
   <Layout>
     <Wrapper>
         <Hero>
-        <h1>
-            Equilibrio entre <font size="10" color="purple">Aprender</font>, <font size="10" color="#522583">Construir</font> y <font size="10" color="#d85610">Enseñar</font>...
-                </h1>
-                <Random text="EXAMPLE TEXT" />
-        </Hero>
+<div class="content">
+  <div class="content__container">
+    <p class="content__container__text">
+      Equilibrio entre
+    </p>
+    
+    <ul class="content__container__list">
+      <li class="content__container__list__item"><font color="purple">Aprender</font></li>
+      <li class="content__container__list__item"><font color="orange">Construir</font></li>
+      <li class="content__container__list__item"><font color="green">Enseñar</font></li>
+      <li class="content__container__list__item"><font color="yellow">Innovar</font></li>
+    </ul>
+  </div>
+</div>
+
+                </Hero>
+
+
+        
         
         <Wave />
         <Img fluid={data.data.contentfulIndex.frontImage.fluid} />
