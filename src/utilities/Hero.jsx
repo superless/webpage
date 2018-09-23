@@ -40,10 +40,10 @@ const Hero = styled.div`
       font-weight: 500;
       overflow: hidden;
       height: 60px; 
-      padding: 0 35px;
+      padding: 0 55px;
      
       @media (max-width: ${1000 / 16}em) {
-        padding: 0 20px;
+        padding: 0 30px;
 
       }
       
