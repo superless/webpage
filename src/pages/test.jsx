@@ -67,7 +67,7 @@ const Wrapper = styled.div`
 `;
 
 const Index = (data) => { 
-  console.log(data.data);
+  
   return (
     <Layout>
       <Wrapper>

@@ -70,7 +70,7 @@ class SectionBoxes extends React.Component {
     const { data } = this.props
     const { animate } = this.state
     const dataArray = Object.keys(data).map((k) => data[k])
-    console.log(dataArray)
+  
     return (
       <>
        

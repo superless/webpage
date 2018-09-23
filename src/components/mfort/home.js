@@ -106,7 +106,7 @@ const Home = () => {
           <SectionCards>
             { index.cards.map(card => 
               {
-                console.log(card)
+                
 
                 return (
                   <Card

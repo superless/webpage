@@ -16,7 +16,7 @@ const CategoryTemplate = ({
   pageContext: { category },data}) => {
     
     let edges = data.allContentfulPost.edges;
-    console.log(edges)
+    
   return (
     <Layout>
       <Helmet title={`${category} | ${category}`} />
