@@ -115,22 +115,22 @@ const Footer = ({ children }) => {
           <Item>
             <EfectoLink>
               <a href="https://www.facebook.com/trifenix.io" target="_blank" rel="noopener noreferrer">
-                <img src="https://www.shareicon.net/data/48x48/2015/08/28/91997_facebook_512x512.png"></img>
+                <img src="https://www.shareicon.net/download/2015/08/28/92051_facebook.svg"></img>
               </a>
               <a href="https://www.twitter.com/trifenix_io" target="_blank" rel="noopener noreferrer">
-                <img src="https://www.shareicon.net/data/48x48/2015/08/28/91999_blog_512x512.png"></img>
+                <img src="https://www.shareicon.net/download/2015/08/28/92028_twitter.svg"></img>
               </a>
               <a href="https://www.instagram.com/trifenix.io/" target="_blank" rel="noopener noreferrer">
-                <img src="https://www.shareicon.net/data/48x48/2015/08/28/92014_camera_512x512.png"></img>
+                <img src="https://www.shareicon.net/download/2015/08/28/92044_camera.svg"></img>
               </a>
               <a href="https://github.com/trifenix" target="_blank" rel="noopener noreferrer">
-                <img src="https://www.shareicon.net/data/48x48/2015/08/28/92005_social-media_512x512.png"></img>
+                <img src="https://www.shareicon.net/download/2015/08/28/92019_hub.svg"></img>
               </a>
               <a href="https://www.linkedin.com/company/trifenix" target="_blank" rel="noopener noreferrer">
-                <img src="https://www.shareicon.net/data/48x48/2015/08/28/92003_social-media_512x512.png"></img>
+                <img src="https://www.shareicon.net/download/2015/08/28/92041_in.svg"></img>
               </a>
               <a href="https://www.youtube.com/trifenix_io" target="_blank" rel="noopener noreferrer">
-                <img src="https://www.shareicon.net/data/48x48/2015/08/28/91998_video_512x512.png"></img>
+                <img src="https://www.shareicon.net/download/2015/08/28/92023_video.svg"></img>
               </a>
            </EfectoLink>
           </Item>

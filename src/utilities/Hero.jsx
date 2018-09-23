@@ -40,21 +40,21 @@ const Hero = styled.div`
       font-weight: 500;
       overflow: hidden;
       height: 60px; 
-      padding: 0 45px;
+      padding: 0 55px;
      
       @media (max-width: ${1000 / 16}em) {
-        padding: 0 20px;
+        padding: 0 30px;
 
       }
       
   
       &:before {
-        content: '{';
+        content: '<';
         left: 0;
       }
   
       &:after {
-        content: '}';
+        content: '>';
         position: absolute;
         right: 0;
       }
@@ -63,7 +63,7 @@ const Hero = styled.div`
         position: absolute;
         top: 0;
         
-        color: #d85610;
+        color: #d85611;
         font-size: 62px;
         line-height: 50px;
         @media (max-width: ${1000 / 16}em) {

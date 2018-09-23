@@ -2,7 +2,7 @@ import React from 'react'
 
 import ScrollableAnchor from 'react-scrollable-anchor'
 import { graphql, StaticQuery } from 'gatsby'
-
+import { Link } from 'gatsby';
 
 
 
@@ -15,8 +15,7 @@ import SectionPhone from './sectionPhone'
 
 import {  access,  boxes, control, form } from '../../data/home.yml'
 import { theme } from '../../library/utils'
-import { retinaImage } from 'polished';
-import DividerStart from './backgrounds/start'
+
 
 const Home = () => {
   
@@ -72,6 +71,7 @@ const Home = () => {
         <>
           
           <ScrollableAnchor id={index.wideContent[0].blog.slug}>
+          <Link to={index.wideContent[0].blog.slug}>
             <div>
               <Section
                 title={index.wideContent[0].titulo}
@@ -80,10 +80,13 @@ const Home = () => {
                 
               />
             </div>
+            </Link>
           </ScrollableAnchor>
+          
           <SectionPhone image={index.wideContent[0].imagen}/>
          
           <ScrollableAnchor id={index.wideContent[1].blog.slug}>
+            <Link to={index.wideContent[1].blog.slug}>
             <div>
               <Section
                 title={index.wideContent[1].titulo}
@@ -94,6 +97,7 @@ const Home = () => {
                 }}
               />
             </div>
+            </Link>
           </ScrollableAnchor>
           <SectionPhone image={index.wideContent[1].imagen}/>
           
