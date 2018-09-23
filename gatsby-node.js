@@ -6,7 +6,7 @@ exports.createPages = ({ graphql, actions }) => {
   const loadPosts = new Promise((resolve, reject) => {
     graphql(`
       {
-        allContentfulPost {
+        allContentfulPost (sort:{fields:updatedAt, order: DESC}) {
           edges {
             node {
               slug
