@@ -33,7 +33,7 @@ const Hero = styled.div`
       font-weight: 600;
       overflow: hidden;
       height: 60px; //tamaño div dinamico
-      padding: 0 50px;
+      padding: 0 60px;
   
       &:before {
         content: '{';
