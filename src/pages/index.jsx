@@ -12,6 +12,14 @@ import Hero from '../utilities/Hero';
 import {Layout} from './../elements'
 import Home from '../components/mfort/home'
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+/**IMPORTACION LIBRERIA ANIMACION TEXTOS */
+=======
+>>>>>>> 1f32edef3172a83635986bb82cbd839e1c504c1b
+
+>>>>>>> fad86af8a1d7a88b50a274c3b1eee04ed0c1bc35
 const pulse = keyframes`
   0% {
     transform: scale(1);
@@ -65,27 +73,23 @@ const IndexPage = (data) => (
   <Layout>
     <Wrapper>
         <Hero>
-<div class="content">
+          <div class="content">
   <div class="content__container">
     <p class="content__container__text">
-      Equilibrio entre
+      Equilibrio entre:
     </p>
     
     <ul class="content__container__list">
-      <li class="content__container__list__item"><font color="purple">Aprender</font></li>
-      <li class="content__container__list__item"><font color="orange">Construir</font></li>
-      <li class="content__container__list__item"><font color="green">Enseñar</font></li>
-      <li class="content__container__list__item"><font color="yellow">Innovar</font></li>
+      <li class="content__container__list__item"><font color="purple">aprender</font></li>
+      <li class="content__container__list__item"><font color="orange">enseñar</font></li>
+      <li class="content__container__list__item"><font color="green">construir</font></li>
+      <li class="content__container__list__item"><font color="yellow">innovar</font></li>
     </ul>
     
   </div>
 </div>
-
                 </Hero>
-
-
-        
-        
+           
         <Wave />
         <Img fluid={data.data.contentfulIndex.frontImage.fluid} />
       </Wrapper>
