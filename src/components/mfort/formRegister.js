@@ -172,7 +172,7 @@ class Register extends Component {
           <div style={{ position: 'relative' }}>
             <Form onSubmit={this.handleSubmit} loading={loading}>
               <Input
-                placeholder='Your name (optional)'
+                placeholder='Su nombre (opcional)'
                 type="text"
                 name="name"
                 value={name}
@@ -180,7 +180,7 @@ class Register extends Component {
               />
               <Input
                 required
-                placeholder='Your E-mail address'
+                placeholder='Su E-mail'
                 type="email"
                 name="email"
                 value={email}

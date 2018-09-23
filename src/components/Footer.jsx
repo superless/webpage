@@ -65,10 +65,12 @@ const Item = styled.div`
 
 const Important = styled(Item)`
   font-size: 1.2rem;
+  text-align: center;
   a {
     color: ${props => props.theme.colors.white.base};
     &:hover {
       color: ${props => props.theme.colors.primary.base};
+      transform: scale(2);
     }
   }
 `;
@@ -88,35 +90,51 @@ const Footer = ({ children }) => {
         {children && <OptionalContent>{children}</OptionalContent>}
         <Content>
           <Important>
-            <a href="https://www.patreon.com/lekoarts" target="_blank" rel="noopener noreferrer">
-              Patreon
-            </a>
-            <Link to="/categories/tutorial">Tutorials</Link>
+            <Link to="/blog">Blog</Link>
             <Link to="/categories/freebie">Freebies</Link>
           </Important>
           <Item>
-            <Link to="/impressum">Impressum</Link>
-            <Link to="/datenschutz">Datenschutzerklärung</Link>
+            <Link to="/impressum">Empresa</Link>
+            <Link to="/datenschutz">Políticas de Privacidad.</Link>
           </Item>
           <Item>
-            <a href="https://www.behance.net/lekoarts" target="_blank" rel="noopener noreferrer">
-              Behance
-            </a>
-            <a href="https://dribbble.com/LekoArts" target="_blank" rel="noopener noreferrer">
-              Dribbble
-            </a>
-            <a href="https://www.facebook.com/lekoarts.de" target="_blank" rel="noopener noreferrer">
-              Facebook
-            </a>
-            <a href="https://github.com/LeKoArts" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
-            <a href="https://www.instagram.com/lekoarts.de" target="_blank" rel="noopener noreferrer">
-              Instagram
-            </a>
+            <div className="efectolink">
+              <a href="https://www.facebook.com/trifenix.io" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.shareicon.net/data/48x48/2015/08/28/91997_facebook_512x512.png"></img>
+              </a>
+              <a href="https://www.twitter.com/trifenix_io" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.shareicon.net/data/48x48/2015/08/28/91999_blog_512x512.png"></img>
+              </a>
+              <a href="https://www.instagram.com/trifenix.io/" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.shareicon.net/data/48x48/2015/08/28/92014_camera_512x512.png"></img>
+              </a>
+              <a href="https://github.com/trifenix" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.shareicon.net/data/48x48/2015/08/28/92005_social-media_512x512.png"></img>
+              </a>
+              <a href="https://www.linkedin.com/company/trifenix" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.shareicon.net/data/48x48/2015/08/28/92003_social-media_512x512.png"></img>
+              </a>
+              <a href="https://www.youtube.com/trifenix_io" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.shareicon.net/data/48x48/2015/08/28/91998_video_512x512.png"></img>
+              </a>
+           </div>
+           <style jsx>
+               {
+                `
+                  .efectolink a{
+                    margin:0px;
+                    padding:3px;
+                  }
+                  .efectolink img:hover {
+                      transform: translateY(-30px) scale(2);
+                    }
+                  }
+                `
+               }  
+           </style>
           </Item>
         </Content>
-        <Copyright>Copyright © {date}. LekoArts. Alle Rechte vorbehalten.</Copyright>
+        <Copyright>Copyright © {date}. TRIFENIX SpA. Todos los derechos reservados.</Copyright>
       </Container>
     </Wrapper>
   );
