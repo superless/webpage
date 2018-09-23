@@ -12,11 +12,6 @@ import Hero from '../utilities/Hero';
 import {Layout} from './../elements'
 import Home from '../components/mfort/home'
 
-<<<<<<< HEAD
-=======
-/**IMPORTACION LIBRERIA ANIMACION TEXTOS */
-
->>>>>>> 99e88f72e6ba059f32d86251c4a2c07e055e0d42
 const pulse = keyframes`
   0% {
     transform: scale(1);
