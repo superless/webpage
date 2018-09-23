@@ -12,9 +12,6 @@ import Hero from '../utilities/Hero';
 import {Layout} from './../elements'
 import Home from '../components/mfort/home'
 
-/**IMPORTACION LIBRERIA ANIMACION TEXTOS */
-import { Random } from 'react-animated-text';
-
 const pulse = keyframes`
   0% {
     transform: scale(1);
