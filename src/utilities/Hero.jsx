@@ -49,12 +49,12 @@ const Hero = styled.div`
       
   
       &:before {
-        content: '{';
+        content: '_';
         left: 0;
       }
   
       &:after {
-        content: '}';
+        content: ':)';
         position: absolute;
         right: 0;
       }
