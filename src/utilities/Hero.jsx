@@ -50,7 +50,7 @@ const Hero = styled.div`
         position: absolute;
         top: 0;
         
-        color: #d85610;
+        color: #d85611;
         font-size: 62px;
         line-height: 55px;
         
