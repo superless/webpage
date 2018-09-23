@@ -7,10 +7,7 @@ export const ContaninerBox = styled.div`
   display: flex;
   flex-direction: column;
 
-  ${props => {
-    console.log(props)
-   
-  }}
+  
   ${mobile(css`
     width: 50%;
     border: none;

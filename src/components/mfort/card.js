@@ -56,13 +56,14 @@ export const Card = ({ img, title, card, slug }) => (
           </SubHeader>
         </Fade>
       </Text>
-    </Link>
+    
     <Fade delay={200}>
       <Img
         alt={title}
         src={img}
       />
     </Fade>
+    </Link>
   </Wrapper>
 )
 
