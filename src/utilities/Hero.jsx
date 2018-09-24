@@ -1,6 +1,5 @@
 import styled from 'react-emotion';
 
-
 const Hero = styled.div`
   position: absolute;
   top: 50%;

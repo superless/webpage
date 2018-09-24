@@ -5,7 +5,6 @@ import { graphql, StaticQuery } from 'gatsby'
 import { Link } from 'gatsby';
 
 
-
 import Section from './section'
 import { SectionCards, Card } from './card'
 import SectionBoxes from './box'
@@ -15,6 +14,7 @@ import SectionPhone from './sectionPhone'
 
 import {  access,  boxes, control, form } from '../../data/home.yml'
 import { theme } from '../../library/utils'
+import styled from 'react-emotion';
 
 
 const Home = () => {
@@ -102,7 +102,6 @@ const Home = () => {
           <SectionPhone image={index.wideContent[1].imagen}/>
           
           
-          
           <SectionCards>
             { index.cards.map(card => 
               {
@@ -122,14 +121,22 @@ const Home = () => {
               )
             }
           </SectionCards>
+       
           <Section
             title={access.title}
             content={access.subTitle}
             background= {access.background}
           />
-          <SectionBoxes
+
+
+
+
+     <SectionBoxes
             data={boxes}
-          />
+          >
+    
+          </SectionBoxes>
+          {/*
           <Section
             title={control.title}
             content={control.subTitle}
@@ -138,14 +145,18 @@ const Home = () => {
           {/* <ScrollableAnchor id="contact">
             <Subscribe
               title={form.title}
+              
               button={form.button}
             />
-          </ScrollableAnchor> */}
+          </ScrollableAnchor> }*/
+          }
         </>
       )}
     />
   )
 }
+
+
 
 
 

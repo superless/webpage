@@ -121,9 +121,9 @@ const PostTemplate = ({ data }) => {
         
       </Container>
       <Footer>
-        <h2>Lust auf mehr Tutorials & Goodies? Werde ein Patron.</h2>
-        <a href="https://www.patreon.com/lekoarts" target="_blank" rel="noopener noreferrer">
-          <Button type="secondary">Patreon</Button>
+        <h2>Si te interesan nuestros servicios no dudes en contactarnos.</h2>
+        <a href="http://#" target="_blank" rel="noopener noreferrer">
+          <Button type="secondary">Contactar</Button>
         </a>
       </Footer>
     </Layout>
