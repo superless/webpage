@@ -40,10 +40,10 @@ const Hero = styled.div`
       font-weight: 500;
       overflow: hidden;
       height: 60px; 
-      padding: 0 55px;
+      padding: 0px 35px;
      
       @media (max-width: ${1000 / 16}em) {
-        padding: 0 30px;
+        padding: 0px 15px;
 
       }
       
@@ -72,10 +72,10 @@ const Hero = styled.div`
         }
         
         -webkit-animation-name: opacity;
-        -webkit-animation-duration: 2s;
+        -webkit-animation-duration: 2.5s;
         -webkit-animation-iteration-count: infinite;
         animation-name: opacity;
-        animation-duration: 2s;
+        animation-duration: 2.5s;
         animation-iteration-count: infinite;
       }
   
@@ -92,15 +92,15 @@ const Hero = styled.div`
         list-style: none;
         
         @media (max-width: ${1000 / 16}em) {
-          padding-left: 155px;
+          padding-left: 160px;
           
         }
 
         -webkit-animation-name: change;
-        -webkit-animation-duration: 10s;
+        -webkit-animation-duration: 20s;
         -webkit-animation-iteration-count: infinite;
         animation-name: change;
-        animation-duration: 10s;
+        animation-duration: 20s;
         animation-iteration-count: infinite;
   
         &__item {
