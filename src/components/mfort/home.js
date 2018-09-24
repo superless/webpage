@@ -13,7 +13,7 @@ import Subscribe from './formRegister'
 
 import SectionPhone from './sectionPhone'
 
-import {  access,  boxes, control, form } from '../../data/home.yml'
+import {  access,   control, form } from '../../data/home.yml'
 import { theme } from '../../library/utils'
 
 
