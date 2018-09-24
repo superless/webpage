@@ -40,10 +40,10 @@ const Hero = styled.div`
       font-weight: 500;
       overflow: hidden;
       height: 60px; 
-      padding: 0 55px;
+      padding: 0px 35px;
      
       @media (max-width: ${1000 / 16}em) {
-        padding: 0 30px;
+        padding: 0px 15px;
 
       }
       
@@ -92,7 +92,7 @@ const Hero = styled.div`
         list-style: none;
         
         @media (max-width: ${1000 / 16}em) {
-          padding-left: 155px;
+          padding-left: 160px;
           
         }
 
