@@ -8,7 +8,7 @@ import { Link } from 'gatsby';
 
 import Section from './section'
 import { SectionCards, Card } from './card'
-import SectionBoxes from './box'
+import SectionImageBoxes from './boxImage'
 import Subscribe from './formRegister'
 
 import SectionPhone from './sectionPhone'
@@ -64,85 +64,122 @@ const Home = () => {
               }
               
             }
+            boxes {
+              idNumber
+              titulo
+              childContentfulBlogFrontItemContenidoTextNode{
+               childMarkdownRemark{
+                 html
+               }
+             }
+              imagen{
+               file{
+                 url
+               }
+             }
+
+           }
           }
         }
       `}
-      render={({ index }) => (
-        <>
-          
-          <ScrollableAnchor id={index.wideContent[0].blog.slug}>
-          <Link to={index.wideContent[0].blog.slug}>
-            <div>
-              <Section
-                title={index.wideContent[0].titulo}
-                content={index.wideContent[0].contenido.childMarkdownRemark.html}
-                padding={'14vh 0 8vh'}
-                
-              />
-            </div>
-            </Link>
-          </ScrollableAnchor>
-          
-          <SectionPhone image={index.wideContent[0].imagen}/>
-         
-          <ScrollableAnchor id={index.wideContent[1].blog.slug}>
-            <Link to={index.wideContent[1].blog.slug}>
-            <div>
-              <Section
-                title={index.wideContent[1].titulo}
-                content={index.wideContent[1].contenido.childMarkdownRemark.html}
-                padding={'14vh 0 8vh'}
-                color={{
-                  background: theme.whiteFont
-                }}
-              />
-            </div>
-            </Link>
-          </ScrollableAnchor>
-          <SectionPhone image={index.wideContent[1].imagen}/>
-          
-          
-          
-          <SectionCards>
-            { index.cards.map(card => 
-              {
-                
+      render={({ index }) => {
 
-                return (
-                  <Card
-                    key={card.idNumber}
-                    title={card.titulo}
-                    img={card.imagen.file.url}
-                    card={card.idNumber}
-                    slug = {card.blog.slug}
-                  />
+        var boximages = index.boxes.map(box => {return {id : box.idNumber, title : box.titulo, image : box.imagen.file.url}});
+        
+        return (
+          <>
+            
+            <ScrollableAnchor id={index.wideContent[0].blog.slug}>
+            <Link to={index.wideContent[0].blog.slug}>
+              <div>
+                <Section
+                  title={index.wideContent[0].titulo}
+                  content={index.wideContent[0].contenido.childMarkdownRemark.html}
+                  padding={'14vh 0 8vh'}
+                  
+                />
+              </div>
+              </Link>
+            </ScrollableAnchor>
+            
+            <SectionPhone image={index.wideContent[0].imagen}/>
+           
+            <ScrollableAnchor id={index.wideContent[1].blog.slug}>
+              <Link to={index.wideContent[1].blog.slug}>
+              <div>
+                <Section
+                  title={index.wideContent[1].titulo}
+                  content={index.wideContent[1].contenido.childMarkdownRemark.html}
+                  padding={'14vh 0 8vh'}
+                  color={{
+                    background: theme.whiteFont
+                  }}
+                />
+              </div>
+              </Link>
+            </ScrollableAnchor>
+            <SectionPhone image={index.wideContent[1].imagen}/>
+            
+            
+            
+            <SectionCards>
+              { index.cards.map(card => 
+                {
+                  
+  
+                  return (
+                    <Card
+                      key={card.idNumber}
+                      title={card.titulo}
+                      img={card.imagen.file.url}
+                      card={card.idNumber}
+                      slug = {card.blog.slug}
+                    />
+                  )
+  
+                }
                 )
-
               }
-              )
-            }
-          </SectionCards>
-          <Section
-            title={access.title}
-            content={access.subTitle}
-            background= {access.background}
-          />
-          <SectionBoxes
-            data={boxes}
-          />
-          <Section
-            title={control.title}
-            content={control.subTitle}
-            padding={'20vh 0 0'}
-          />
-          {/* <ScrollableAnchor id="contact">
-            <Subscribe
-              title={form.title}
-              button={form.button}
+            </SectionCards>
+            
+            <ScrollableAnchor id={index.wideContent[2].blog.slug}>
+              <Link to={index.wideContent[2].blog.slug}>
+              <div>
+                <Section
+                  title={index.wideContent[2].titulo}
+                  content={index.wideContent[2].contenido.childMarkdownRemark.html}
+                  padding={'14vh 0 8vh'}
+  
+                />
+              </div>
+              </Link>
+            </ScrollableAnchor>
+            <SectionPhone image={index.wideContent[2].imagen}/>
+            <Section
+              title={access.title}
+              content={access.subTitle}
+              background= {access.background}
             />
-          </ScrollableAnchor> */}
-        </>
-      )}
+            <SectionImageBoxes
+              data={boximages}
+            />
+            <Section
+              title={control.title}
+              content={control.subTitle}
+              padding={'20vh 0 0'}
+            />
+            {/* <ScrollableAnchor id="contact">
+              <Subscribe
+                title={form.title}
+                button={form.button}
+              />
+            </ScrollableAnchor> */}
+          </>
+        )
+      }
+        
+        
+      }
     />
   )
 }
