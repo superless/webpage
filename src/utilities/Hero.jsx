@@ -49,12 +49,12 @@ const Hero = styled.div`
       
   
       &:before {
-        content: '{';
+        content: '[';
         left: 0;
       }
   
       &:after {
-        content: '}';
+        content: ']';
         position: absolute;
         right: 0;
       }
@@ -64,7 +64,7 @@ const Hero = styled.div`
         top: 0;
         
         color: #d85611;
-        font-size: 62px;
+        font-size: 60px;
         line-height: 50px;
         @media (max-width: ${1000 / 16}em) {
           font-size: 34px;
