@@ -78,7 +78,7 @@ const Blog = ({
         </Hero>
         
         <Wave />
-        <Img fluid={data.image.imagen.fluid} />
+        <Img fluid={data.image.imagen.fluid} alt={data.image.imagen.title} />
       </Wrapper>
     <Container type="big">
       <Base>

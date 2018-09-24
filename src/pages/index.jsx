@@ -84,7 +84,7 @@ const IndexPage = (data) => (
                 </Hero>
            
         <Wave />
-        <Img fluid={data.data.contentfulIndex.frontImage.fluid} />
+        <Img alt="equilibrio entre aprender, enseñar, construir e innovar" fluid={data.data.contentfulIndex.frontImage.fluid} />
       </Wrapper>
       <Home/>
     
