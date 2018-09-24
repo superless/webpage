@@ -116,16 +116,7 @@ const PostTemplate = ({ data }) => {
           <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
         </Note>
       </Container>
-      <Container>
-        <InfoText>Más informes en el Blog</InfoText>
-        
-      </Container>
-      <Footer>
-        <h2>Lust auf mehr Tutorials & Goodies? Werde ein Patron.</h2>
-        <a href="https://www.patreon.com/lekoarts" target="_blank" rel="noopener noreferrer">
-          <Button type="secondary">Patreon</Button>
-        </a>
-      </Footer>
+      
     </Layout>
   )
 }
