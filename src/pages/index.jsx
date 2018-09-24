@@ -54,6 +54,7 @@ const Wrapper = styled.div`
     }
   }
 `;
+
 const Base = styled.div`
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
