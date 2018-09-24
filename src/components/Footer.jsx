@@ -68,8 +68,10 @@ const EfectoLink = styled.div`
   max-width: 800px;
   min-width: 300px;
   justify-content: center;
+  
   a {
     margin: 0;
+    padding-left: 10px;
     }
   img {
     max-width: 48px;
@@ -115,7 +117,7 @@ const Footer = ({ children }) => {
             <Link to="/impressum">Empresa</Link>
             <Link to="/datenschutz">Políticas de Privacidad.</Link>
           </Item>
-          <Item>
+          <Item><p>Siguenos y comparte en nuestras redes sociales:</p>
             <EfectoLink>
               <a href="https://www.facebook.com/trifenix.io" target="_blank" rel="noopener noreferrer">
                 <img src="https://www.shareicon.net/download/2015/08/28/92051_facebook.svg"></img>

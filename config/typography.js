@@ -1,7 +1,7 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  title: 'LekoArts',
+  title: 'TRIFENIX',
   baseFontSize: '18px',
   baseLineHeight: 1.45,
   headerFontFamily: [
