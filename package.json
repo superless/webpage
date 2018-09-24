@@ -20,7 +20,6 @@
     "gatsby-plugin-feed": "latest",
     "gatsby-plugin-google-analytics": "latest",
     "gatsby-plugin-lodash": "latest",
-    
     "gatsby-plugin-manifest": "latest",
     "gatsby-plugin-netlify": "latest",
     "gatsby-plugin-netlify-cache": "^0.1.0",
@@ -34,6 +33,7 @@
     "gatsby-remark-images": "latest",
     "gatsby-remark-images-contentful": "latest",
     "gatsby-remark-prismjs": "latest",
+    "gatsby-remark-responsive-iframe": "^2.0.5",
     "gatsby-source-contentful": "latest",
     "gatsby-source-filesystem": "latest",
     "gatsby-transformer-remark": "latest",
