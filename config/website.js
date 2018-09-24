@@ -21,7 +21,7 @@ module.exports = {
   siteTitleAlt: 'TRIFENIX Innovación Continua', // This allows an alternative site title for SEO schema.
   publisher: 'TRIFENIX', // Organization name used for SEO schema
   siteDescription:
-    'Agencia de desarrollo e integraciones.',
+    'Agencia de desarrollo de sitios web e integraciones. Ayudamos a empresas y organizaciones sin fines de lucro a potenciar sus sistemas informáticos para su propio beneficio',
   siteUrl: 'https://www.trifenix.io', // Site domain. Do not include a trailing slash! If you wish to use a path prefix you can read more about that here: https://www.gatsbyjs.org/docs/path-prefix/
   author: 'trifunnyx', // Author for RSS author segment and SEO schema
   authorUrl: 'https://www.trifenix.com/', // URL used for author and publisher schema, can be a social profile or other personal site

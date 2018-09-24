@@ -5,7 +5,6 @@ import { graphql, StaticQuery } from 'gatsby'
 import { Link } from 'gatsby';
 
 
-
 import Section from './section'
 import { SectionCards, Card } from './card'
 import SectionImageBoxes from './boxImage'
@@ -15,6 +14,7 @@ import SectionPhone from './sectionPhone'
 
 import {  access,   control, form } from '../../data/home.yml'
 import { theme } from '../../library/utils'
+import styled from 'react-emotion';
 
 
 const Home = () => {
@@ -85,7 +85,45 @@ const Home = () => {
           }
         }
       `}
-      render={({ index }) => {
+      render={({ index }) => (
+        <>
+          
+          <ScrollableAnchor id={index.wideContent[0].blog.slug}>
+          <Link to={index.wideContent[0].blog.slug}>
+            <div>
+              <Section
+                title={index.wideContent[0].titulo}
+                content={index.wideContent[0].contenido.childMarkdownRemark.html}
+                padding={'14vh 0 8vh'}
+                
+              />
+            </div>
+            </Link>
+          </ScrollableAnchor>
+          
+          <SectionPhone image={index.wideContent[0].imagen}/>
+         
+          <ScrollableAnchor id={index.wideContent[1].blog.slug}>
+            <Link to={index.wideContent[1].blog.slug}>
+            <div>
+              <Section
+                title={index.wideContent[1].titulo}
+                content={index.wideContent[1].contenido.childMarkdownRemark.html}
+                padding={'14vh 0 8vh'}
+                color={{
+                  background: theme.whiteFont
+                }}
+              />
+            </div>
+            </Link>
+          </ScrollableAnchor>
+          <SectionPhone image={index.wideContent[1].imagen}/>
+          
+          
+          <SectionCards>
+            { index.cards.map(card => 
+              {
+                
 
         var boximages = index.boxes.map(box => {return {id : box.idNumber, title : box.titulo, image : box.imagen.file.url, slug: box.blog.slug}});
         
@@ -143,6 +181,42 @@ const Home = () => {
                 }
                 )
               }
+<<<<<<< HEAD
+              )
+            }
+          </SectionCards>
+       
+          <Section
+            title={access.title}
+            content={access.subTitle}
+            background= {access.background}
+          />
+
+
+
+
+     <SectionBoxes
+            data={boxes}
+          >
+    
+          </SectionBoxes>
+          {/*
+          <Section
+            title={control.title}
+            content={control.subTitle}
+            padding={'20vh 0 0'}
+          />
+          {/* <ScrollableAnchor id="contact">
+            <Subscribe
+              title={form.title}
+              
+              button={form.button}
+            />
+          </ScrollableAnchor> }*/
+          }
+        </>
+      )}
+=======
             </SectionCards>
             
             <ScrollableAnchor id={index.wideContent[2].blog.slug}>
@@ -183,9 +257,12 @@ const Home = () => {
         
         
       }
+>>>>>>> e1ad41a22fec696eb83302f3980c8d81196993bf
     />
   )
 }
+
+
 
 
 

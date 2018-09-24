@@ -119,7 +119,16 @@ const PostTemplate = ({ data }) => {
           <Share url={`${config.siteUrl}/${slug}`} />
         </Note>
       </Container>
-      
+      <Container>
+        <InfoText>Más informes en el Blog</InfoText>
+        
+      </Container>
+      <Footer>
+        <h2>Si te interesan nuestros servicios no dudes en contactarnos.</h2>
+        <a href="http://#" target="_blank" rel="noopener noreferrer">
+          <Button type="secondary">Contactar</Button>
+        </a>
+      </Footer>
     </Layout>
   )
 }
