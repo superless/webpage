@@ -129,12 +129,6 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-mailchimp',
-      options: {
-        endpoint: "https://mintfort.us12.list-manage.com/subscribe/post?u=52c52522e40057472766a9ee3&amp;id=304a96c331"
-      }
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',

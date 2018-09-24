@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'react-emotion'
-import addToMailchimp from 'gatsby-plugin-mailchimp'
+
 import Spinner from 'react-spinkit'
 import ScrollableAnchor from 'react-scrollable-anchor'
 
@@ -129,37 +129,10 @@ class Register extends Component {
       [e.target.name]: e.target.value
     })
   }
-  handleSubmit = async e => {
-    e.preventDefault()
-    const { email, name } = this.state
-
-    if (!email.length) return
-
-    this.setState({ loading: true })
-
-    if (!validateEmail(email)) {
-      this.setState({
-        response: {
-          result: "error",
-          msg: 'That doesn\'t look like a valid email address.'
-        },
-        loading: false
-      })
-      return
-    }
-
-    const response = await addToMailchimp(email, { FNAME: name })
-
-    this.setState({
-      loading: false,
-      name: '',
-      email: '',
-      response
-    })
-  }
+  
 
   render() {
-    const { response, loading, name, email } = this.state
+    const { loading, name, email } = this.state
     const { title, button } = this.props
 
     return (
@@ -170,7 +143,7 @@ class Register extends Component {
         </Header>
         <ScrollableAnchor id='subscribe'>
           <div style={{ position: 'relative' }}>
-            <Form onSubmit={this.handleSubmit} loading={loading}>
+            <Form method="POST" action="https://formspree.io/hola@trifenix.com" loading={loading}>
               <Input
                 placeholder='Su nombre (opcional)'
                 type="text"
@@ -186,7 +159,6 @@ class Register extends Component {
                 value={email}
                 onChange={this.handleChange}
               />
-              {response && <DisplayMessage data={response} /> }
               <Button
                 primary
                 disabled={loading}

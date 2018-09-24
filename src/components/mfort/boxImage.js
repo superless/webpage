@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'react-emotion'
 import Fade from 'react-reveal/Fade'
-
+import {Link} from 'gatsby'
 
 import { Paragraph, Img, Container, ContaninerBox } from '../../library'
 import { rem, phone, theme, flex, mobile } from '../../library/utils'
@@ -27,14 +27,16 @@ const border = '1px solid #EDEDED'
 
 
 
-const Box = ({ title, id, img }) => (
+const Box = ({ title, id, img, slug }) => (
   <ContaninerBox text={id}>
   
     <Container style={{ flex: 3 }} centrate>
+      <Link to={slug}>
       <Img width="79" height="79"
           alt={title}
           src={img}
         />
+        </Link>
     </Container>
     <Container style={{ flex: 1 }} centrate>
       <Fade delay={300}>
@@ -68,6 +70,7 @@ class SectionImageBoxes extends React.Component {
                 title={map.title}
                 id={map.id}
                 img = {map.image}
+                slug = {map.slug}
               />
             ))}
         </Section>
