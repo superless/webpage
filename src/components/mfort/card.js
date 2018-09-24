@@ -42,9 +42,20 @@ const Text = styled.div`
     }
   `)}
 `
+const EfectoLink = styled.div `
+    img, a{
+    display: flex;
+    max-width: 100%;
+    min-width: 100px;
+    &:hover {
+      transform: scale(1.01);
+      }
+    }
+`;
 
 export const Card = ({ img, title, card, slug }) => (
   <Wrapper card={card}>
+    <EfectoLink>
     <Link to={slug}>
       <Text>
         <Fade>
@@ -64,6 +75,7 @@ export const Card = ({ img, title, card, slug }) => (
       />
     </Fade>
     </Link>
+    </EfectoLink>
   </Wrapper>
 )
 

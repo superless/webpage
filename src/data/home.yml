@@ -44,8 +44,8 @@ access:
 boxes:
   a :
       id: 1
-      title: Smart Lending
-      component: SmartLending
+      title: cualquier basura
+      component: Wallet
    
   b :
       id: 2
