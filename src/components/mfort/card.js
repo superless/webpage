@@ -43,12 +43,21 @@ const Text = styled.div`
   `)}
 `
 const EfectoLink = styled.div `
-    img, a{
+    a{
     display: flex;
     max-width: 100%;
     min-width: 100px;
+    }
+    img {
+    display: flex;
+    max-width: 100%;
+    min-width: 100px;
+    -webkit-transition-property: transform; /* Safari */
+    -webkit-transition-duration: 10s; /* Safari */
+    transition-property: transform;
+    transition-duration: 10s;
     &:hover {
-      transform: scale(1.01);
+      transform: scale(1.8);
       }
     }
 `;
