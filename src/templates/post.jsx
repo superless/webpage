@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Share} from 'react-twitter-widgets'
 import styled, { keyframes, css } from 'react-emotion';
 import Img from 'gatsby-image';
 import { Link, graphql } from 'gatsby';
@@ -9,7 +9,7 @@ import { hideS, Hero, InfoText } from '../utilities';
 import Button from '../components/Button';
 import Footer from '../components/Footer';
 import TagList from '../components/TagList';
-
+import config from '../../config/website'
 const pulse = keyframes`
   0% {
     transform: scale(1);
@@ -114,6 +114,9 @@ const PostTemplate = ({ data }) => {
         <Note>
           <span className={fontBold}>¿Te interesó?</span> Lee las otras publicaciónes en la categoría{' '}
           <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
+        </Note>
+        <Note>
+          <Share url={`${config.siteUrl}/${slug}`} />
         </Note>
       </Container>
       

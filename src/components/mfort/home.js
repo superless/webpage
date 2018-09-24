@@ -72,6 +72,9 @@ const Home = () => {
                  html
                }
              }
+             blog{
+              slug
+             }
               imagen{
                file{
                  url
@@ -84,7 +87,7 @@ const Home = () => {
       `}
       render={({ index }) => {
 
-        var boximages = index.boxes.map(box => {return {id : box.idNumber, title : box.titulo, image : box.imagen.file.url}});
+        var boximages = index.boxes.map(box => {return {id : box.idNumber, title : box.titulo, image : box.imagen.file.url, slug: box.blog.slug}});
         
         return (
           <>
