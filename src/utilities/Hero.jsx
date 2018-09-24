@@ -72,10 +72,10 @@ const Hero = styled.div`
         }
         
         -webkit-animation-name: opacity;
-        -webkit-animation-duration: 2s;
+        -webkit-animation-duration: 2.5s;
         -webkit-animation-iteration-count: infinite;
         animation-name: opacity;
-        animation-duration: 2s;
+        animation-duration: 2.5s;
         animation-iteration-count: infinite;
       }
   
@@ -97,10 +97,10 @@ const Hero = styled.div`
         }
 
         -webkit-animation-name: change;
-        -webkit-animation-duration: 10s;
+        -webkit-animation-duration: 20s;
         -webkit-animation-iteration-count: infinite;
         animation-name: change;
-        animation-duration: 10s;
+        animation-duration: 20s;
         animation-iteration-count: infinite;
   
         &__item {
