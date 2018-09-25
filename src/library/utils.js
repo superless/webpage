@@ -42,7 +42,7 @@ export const hover = inner => css`
 
 
 export const theme = {
-  mint: '#19DBB6',
+  mint: '#FFFFFF',
   blue: '#1b243f',
   red: '#F44336',
   gray: "#F2F2F2",
