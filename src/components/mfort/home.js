@@ -92,7 +92,7 @@ const Home = () => {
         return (
           <>
             
-            <ScrollableAnchor id={index.wideContent[0].blog.slug}>
+           
             <Link to={index.wideContent[0].blog.slug}>
               <div>
                 <Section
@@ -103,11 +103,11 @@ const Home = () => {
                 />
               </div>
               </Link>
-            </ScrollableAnchor>
+            
             
             <SectionPhone image={index.wideContent[0].imagen}/>
            
-            <ScrollableAnchor id={index.wideContent[1].blog.slug}>
+           
               <Link to={index.wideContent[1].blog.slug}>
               <div>
                 <Section
@@ -120,7 +120,7 @@ const Home = () => {
                 />
               </div>
               </Link>
-            </ScrollableAnchor>
+        
             <SectionPhone image={index.wideContent[1].imagen}/>
             
             
@@ -145,7 +145,7 @@ const Home = () => {
               }
             </SectionCards>
             
-            <ScrollableAnchor id={index.wideContent[2].blog.slug}>
+           
               <Link to={index.wideContent[2].blog.slug}>
               <div>
                 <Section
@@ -156,7 +156,7 @@ const Home = () => {
                 />
               </div>
               </Link>
-            </ScrollableAnchor>
+            
             <SectionPhone image={index.wideContent[2].imagen}/>
             <Section
               title={access.title}
