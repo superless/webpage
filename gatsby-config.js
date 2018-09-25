@@ -67,11 +67,11 @@ module.exports = {
           : contentfulConfig.production
     },
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: config.googleAnalyticsID,
-        anonymize: true
-      }
+        trackingId: process.env.GOOGLE_ANALYTICS,
+        head: true,
+      },
     },
     {
       resolve: "gatsby-plugin-nprogress",
