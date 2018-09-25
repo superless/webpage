@@ -21,22 +21,23 @@ const Impressum = () => (
           <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#108;&#101;&#107;&#111;&#097;&#114;&#116;&#115;&#046;&#100;&#101;">
             hola@trifenix.com
           </a>
+          Telefono: +56 2 5026284
         </p>
        
         <h2>Nuestra empresa</h2>
         <p>
-          Somos un equipo de tres desarrolladores, de distintas áreas comerciales, con más de 10 años de experiencia asesorando a grandes empresas en la busqueda de la optimización tecnológica.
+          Somos un equipo de desarrolladores de distintas áreas comerciales, con más de 10 años de experiencia asesorando a grandes empresas en la búsqueda de la optimización tecnológica.
         </p>
         <p>
-          Mientras trabajamos en distintas empresas y distintos paises, 
-          siempre vimos la necesidad de una nueva visión, aquella donde las pequeñas y medianas empresas puedan llegar 
-          a un nivel óptimo de tecnología (y de ingresos) con los costos de las nuevas tendencias en la nube y la facilitación de los procesos de construcción.
+          Nuestra trayectoria laboral en distintas empresas y distintos paises, 
+          siempre observamos la necesidad de una nueva visión, aquella donde las pequeñas y medianas empresas puedan llegar 
+          a un nivel óptimo de tecnología (y de ingresos), con los costos de las nuevas tendencias en la nube y la facilitación de los procesos de construcción.
         </p>
         <p>
           Podemos apreciar más que nadie, los efectos de la modernidad y como en tecnología, lo relativamente nuevo ya es absoleto, por tanto,
-          también sus especialistas, servicios comunes que se establecían en las empresas ya no lo son, todo está derivando al uso de la nube, desplazando
-          todos los procesos a las grandes corporaciones, trayendo consigo grandes beneficios, pero recordandonos nuevamente, 
-          que el que no avanza, se queda. 
+          también sus especialistas, servicios comunes que se establecían en las empresas ya no lo son, todo está derivando al uso de plataformas en la nube (cloud computing), desplazando
+          todos los procesos a las grandes corporaciones, trayendo consigo grandes beneficios, pero recordandonos nuevamente,
+          el que no quiere avanzar, pues simplemente se queda sumergido en las tecnologias obsoletas. 
           </p>
           <p>
           Nuestro aprendizaje ha sido constante, porque ahora nosotros definimos el mejor camino,  tenemos todas las competencias

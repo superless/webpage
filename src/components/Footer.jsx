@@ -114,7 +114,7 @@ const Footer = ({ children }) => {
             
           </Important>
           <Item>
-            <Link to="/empresa">Empresa</Link>
+            <Link to="/empresa">¿Quienes Somos?</Link>
           </Item>
           <Item><p>Siguenos y comparte en nuestras redes sociales:</p>
             <EfectoLink>
@@ -133,7 +133,7 @@ const Footer = ({ children }) => {
               <a href="https://www.linkedin.com/company/trifenix" target="_blank" rel="noopener noreferrer">
                 <img src="https://www.shareicon.net/download/2015/08/28/92041_in.svg"></img>
               </a>
-              <a href="https://www.youtube.com/trifenix_io" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/channel/UCfMZ12REWKSh-RGYmGhJxkA" target="_blank" rel="noopener noreferrer">
                 <img src="https://www.shareicon.net/download/2015/08/28/92023_video.svg"></img>
               </a>
            </EfectoLink>
