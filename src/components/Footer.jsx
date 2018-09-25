@@ -114,7 +114,7 @@ const Footer = ({ children }) => {
             
           </Important>
           <Item>
-            <Link to="/empresa">Empresa</Link>
+            <Link to="/empresa">¿Quienes Somos?</Link>
           </Item>
           <Item><p>Siguenos y comparte en nuestras redes sociales:</p>
             <EfectoLink>
