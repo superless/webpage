@@ -146,8 +146,10 @@ module.exports = {
             // Add runtime caching of various page resources.
             urlPattern: /\.(?:png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
             handler: `staleWhileRevalidate`,
-          },
-        ]
+          }],
+          skipWaiting: true,
+          clientsClaim: true,
+        
       }
     },
     {
