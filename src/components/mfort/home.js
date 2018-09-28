@@ -1,6 +1,6 @@
 import React from 'react'
 
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 import { graphql, StaticQuery } from 'gatsby'
 import { Link } from 'gatsby';
 
