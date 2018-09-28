@@ -171,12 +171,12 @@ const Home = () => {
               content={control.subTitle}
               padding={'20vh 0 0'}
             />
-            <ScrollableAnchor id="contact">
+            <ScrollableAnchor id="contact"></ScrollableAnchor>
               <Subscribe
                 title={form.title}
                 button={form.button}
               />
-            </ScrollableAnchor>
+            
           </>
         )
       }
