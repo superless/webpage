@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ScrollableAnchor from 'react-scrollable-anchor'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { graphql, StaticQuery } from 'gatsby'
 import { Link } from 'gatsby';
 
@@ -172,12 +172,14 @@ const Home = () => {
               padding={'20vh 0 0'}
             />
             
+              
+            
               <Subscribe
                 title={form.title}
                 button={form.button}
-              />
-           
-          </div>
+                />
+                </div>
+              
         )
       }
         
