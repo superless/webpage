@@ -50,7 +50,7 @@ const Nav = styled.nav`
 
 class Navigation extends Component {
   componentWillMount() {
-    configureAnchors({offset: 300, scrollDuration: 600})
+    configureAnchors({offset: 0, scrollDuration: 600})
   }
   render() {
     return (
