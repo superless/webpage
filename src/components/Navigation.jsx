@@ -62,7 +62,7 @@ class Navigation extends Component {
         <Nav>
           
           <Link to="/blog">Blog</Link>
-           <Link to="#contact" onClick={()=>goToAnchor("subscribe")}>Contacto</Link>
+           <Link to="#subscribe" onClick={()=>goToAnchor("subscribe")}>Contacto</Link>
         </Nav>
       </Headroom>
     );
