@@ -26,9 +26,10 @@ const Tag = styled.li`
 `
 
 const TagList = props => {
-  
+
   return (
     <List>
+      
       {props.tags.map(tag => (
         <Tag key={tag.id}>
           <Link to={`/tag/${tag.slug}/`}>{tag.title}</Link>

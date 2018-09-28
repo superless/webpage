@@ -90,7 +90,7 @@ const Home = () => {
         var boximages = index.boxes.map(box => {return {id : box.idNumber, title : box.titulo, image : box.imagen.file.url, slug: box.blog.slug}});
         
         return (
-          <>
+          <div>
             
            
             <Link to={index.wideContent[0].blog.slug}>
@@ -171,13 +171,13 @@ const Home = () => {
               content={control.subTitle}
               padding={'20vh 0 0'}
             />
-            <ScrollableAnchor id="contact"></ScrollableAnchor>
+            <ScrollableAnchor id="contact">
               <Subscribe
                 title={form.title}
                 button={form.button}
               />
-            
-          </>
+            </ScrollableAnchor>
+          </div>
         )
       }
         
