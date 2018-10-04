@@ -20,9 +20,9 @@ const ErrorPage = () => (
           🤔
         </span>
       </h1>
-      <h3>La pagina que buscabas no esta en la ruta</h3>
+      <h3>La página que buscas no esta en nuestros archivos.</h3>
       <p>
-        Haz click aqui para volver al inicio <Link to="/">PAGINA DE INICIO</Link> o puedes volver atras
+        Haz click aquí para volver al inicio <Link to="/">PAGINA DE INICIO</Link> o puedes volver atrás
         no te rindas.{' '}
         <a href="https://www.twitter.com/trifenix_io" target="_blank" rel="nofollow noopener noreferrer">
           Twitter
