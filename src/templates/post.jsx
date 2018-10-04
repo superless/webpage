@@ -119,8 +119,6 @@ const PostTemplate = ({ data }) => {
           <Share url={`${config.siteUrl}/${slug}`} />
         </Note>
       </Container>
-      
-      
     </Layout>
   )
 }
