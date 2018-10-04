@@ -33,6 +33,7 @@ module.exports = {
   social: [
     { name: "Facebook", url: 'https://www.facebook.com/trifenix.io' },
     { name: "Twitter", url: 'https://twitter.com/trifenix_io' },
+    { name: "Instragram", url: 'https://www.instagram.com/trifenix.io' },
     { name: "Linkedin", url: 'https://www.linkedin.com/company/trifenix/' },
     { name: "Medium", url: 'https://medium.com/trifenix' },
     { name: "Github", url: 'https://github.com/trifenix' }
