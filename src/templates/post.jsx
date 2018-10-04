@@ -112,7 +112,7 @@ const PostTemplate = ({ data }) => {
         <Line aria-hidden="true" />
         <TagList tags={tags} />
         <Note>
-          <span className={fontBold}>¿Te interesó?</span> Lee las otras publicaciónes en la categoría{' '}
+          <span className={fontBold}>¿Te interesó?</span> Lee las otras publicaciones en la categoría{' '}
           <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
         </Note>
         <Note>
