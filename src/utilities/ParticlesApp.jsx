@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 import Particles from 'react-particles-js';
 
-
-
 const particleOpt = {
 /*PARTICULAS SIMPLES*/
 "particles": {
     "number": {
-      "value": 80,
+      "value": 50,
       "density": {
         "enable": true,
         "value_area": 800
@@ -53,21 +51,21 @@ const particleOpt = {
     },
     "line_linked": {
       "enable": true,
-      "distance": 176.3753266952075,
+      "distance": 150,
       "color": "#ffffff",
-      "opacity": 0.44093831673801875,
-      "width": 0.8017060304327615
+      "opacity": 0.4,
+      "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 6.413648243462092,
+      "speed": 6,
       "direction": "none",
       "random": false,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
       "attract": {
-        "enable": true,
+        "enable": false,
         "rotateX": 600,
         "rotateY": 1200
       }
@@ -88,7 +86,7 @@ const particleOpt = {
     },
     "modes": {
       "grab": {
-        "distance": 170.53621458328246,
+        "distance": 167.83216783216784,
         "line_linked": {
           "opacity": 1
         }
@@ -115,16 +113,15 @@ const particleOpt = {
   "retina_detect": true
 }
 
-
 class ParticlesApp extends Component{
   
     render(){
         return (
-          <div>
+          
             <Particles
             params={particleOpt} 
             />
-        </div>
+        
         );
     };
 

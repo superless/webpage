@@ -137,7 +137,7 @@ class Register extends Component {
 
     return (
       <Wrapper>
-        <startPageBackground/>
+        <EndPageBackground/>
         <Header color={theme.whiteFont}>
           {title}
         </Header>

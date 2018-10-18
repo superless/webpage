@@ -6,12 +6,12 @@ import Footer from '../components/Footer';
 import Wave from '../elements/Wave'
 import Img from 'gatsby-image'
 
-
 import Hero from '../utilities/Hero';
 
 import {Layout} from './../elements'
 import Home from '../components/mfort/home'
-import Particles from 'react-particles-js';
+
+import ParticlesApp from '../utilities/ParticlesApp';
 
 const pulse = keyframes`
   0% {
@@ -84,7 +84,7 @@ const IndexPage = (data) => (
   </div>
   
 </div>
-<Particles/>
+<ParticlesApp></ParticlesApp>
                 </Hero>    
         <Wave />
         <Img alt="equilibrio entre aprender, enseñar, construir e innovar" fluid={data.data.contentfulIndex.frontImage.fluid} />
@@ -94,7 +94,6 @@ const IndexPage = (data) => (
     <Footer/>
   </Layout>
 )
-
 
 export const query = graphql`
   query
