@@ -5,9 +5,9 @@ const particleOpt = {
 /*PARTICULAS SIMPLES*/
 "particles": {
     "number": {
-      "value": 50,
+      "value": 80,
       "density": {
-        "enable": true,
+        "enable": false,
         "value_area": 800
       }
     },
@@ -15,19 +15,14 @@ const particleOpt = {
       "value": "#ffffff"
     },
     "shape": {
-      "type": "circle",
+      "type": "polygon",
       "stroke": {
         "width": 0,
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 6
       },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
     },
     "opacity": {
       "value": 0.5,
@@ -40,34 +35,34 @@ const particleOpt = {
       }
     },
     "size": {
-      "value": 3,
+      "value": 2,
       "random": true,
       "anim": {
-        "enable": false,
-        "speed": 40,
+        "enable": true,
+        "speed": 10,
         "size_min": 0.1,
         "sync": false
       }
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
+      "distance": 50,
       "color": "#ffffff",
       "opacity": 0.4,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 3,
       "direction": "none",
-      "random": false,
+      "random": true,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
       "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
+        "enable": true,
+        "rotateX": 1600,
+        "rotateY": 1600
       }
     }
   },
@@ -75,7 +70,7 @@ const particleOpt = {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "grab"
       },
       "onclick": {
@@ -86,7 +81,7 @@ const particleOpt = {
     },
     "modes": {
       "grab": {
-        "distance": 167.83216783216784,
+        "distance": 400,
         "line_linked": {
           "opacity": 1
         }
@@ -121,7 +116,7 @@ class ParticlesApp extends Component{
             <Particles
             params={particleOpt} 
             />
-        
+
         );
     };
 
