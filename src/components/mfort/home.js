@@ -4,8 +4,6 @@ import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import { Link } from 'gatsby';
 
-
-
 import Section from './section'
 import { SectionCards, Card } from './card'
 import SectionImageBoxes from './boxImage'
@@ -91,7 +89,7 @@ const Home = () => {
         
         return (
           <div>
-            
+          
            
             <Link to={index.wideContent[0].blog.slug}>
               <div>
@@ -172,12 +170,12 @@ const Home = () => {
               padding={'20vh 0 0'}
             />
             
-              
-            
-              <Subscribe
+            <Subscribe
                 title={form.title}
                 button={form.button}
                 />
+            
+              
                 </div>
               
         )

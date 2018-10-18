@@ -1,93 +1,9 @@
 import React, { Component } from 'react'
 import Particles from 'react-particles-js';
-import { encodingExists } from 'iconv-lite';
+
 
 
 const particleOpt = {
-
-/*	BURBUJAS
-	"particles": {
-        "number": {
-            "value": 160,
-            "density": {
-                "enable": false
-            }
-        },
-        "size": {
-            "value": 2,
-            "random": true,
-            "anim": {
-                "speed": 4,
-                "size_min": 0.3
-            }
-        },
-        "line_linked": {
-            "enable": false
-        },
-        "move": {
-            "random": true,
-            "speed": 2,
-            "direction": "top",
-            "out_mode": "out"
-        }
-    },
-    "interactivity": {
-        "events": {
-            "onhover": {
-                "enable": false,
-                "mode": "bubble"
-            },
-            "onclick": {
-                "enable": true,
-                "mode": "repulse"
-            }
-        },
-        "modes": {
-            "bubble": {
-                "distance": 250,
-                "duration": 2,
-                "size": 0,
-                "opacity": 0
-            },
-            "repulse": {
-                "distance": 400,
-                "duration": 2
-            }
-        }
-	}
-	*/
-
-/*ESTRELLAS
-	"particles": {
-		"number": {
-			"value": 100,
-			"density": {
-				"enable": true,
-				"value_area": 1500
-			}
-		},
-		"line_linked": {
-			"enable": true,
-			"opacity": 0.02
-		},
-		"move": {
-			"direction": "right",
-			"speed": 0.05
-		},
-		"size": {
-			"value": 1
-		},
-		"opacity": {
-			"anim": {
-				"enable": true,
-				"speed": 1,
-				"opacity_min": 0.05
-			}
-		}
-	},
-	"retina_detect": true
-*/
-
 /*PARTICULAS SIMPLES*/
 "particles": {
     "number": {
@@ -101,13 +17,13 @@ const particleOpt = {
       "value": "#ffffff"
     },
     "shape": {
-      "type": "polygon",
+      "type": "circle",
       "stroke": {
         "width": 0,
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 6
+        "nb_sides": 5
       },
       "image": {
         "src": "img/github.svg",
@@ -137,14 +53,14 @@ const particleOpt = {
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
+      "distance": 176.3753266952075,
       "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
+      "opacity": 0.44093831673801875,
+      "width": 0.8017060304327615
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 6.413648243462092,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -172,7 +88,7 @@ const particleOpt = {
     },
     "modes": {
       "grab": {
-        "distance": 377.61590372012546,
+        "distance": 170.53621458328246,
         "line_linked": {
           "opacity": 1
         }
@@ -197,8 +113,6 @@ const particleOpt = {
     }
   },
   "retina_detect": true
-
-
 }
 
 

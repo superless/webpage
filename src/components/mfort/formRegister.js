@@ -11,8 +11,8 @@ import { Header, Button } from '../../library/index'
 import { flex, rem, theme, phone } from '../../library/utils'
 
 const Wrapper = styled.section`
-  height: 900px;
-  padding: 0 0 ${rem(120)};
+  height: 600px;
+  padding: 45 0 ${rem(120)};
   position: relative;
 
   ${flex({ x: 'flex-end' })}
@@ -22,7 +22,7 @@ const Wrapper = styled.section`
 const Form = styled.form`
   position: relative;
   margin: 0;
-  width: 400px;
+  width: 500px;
   ${flex}
   flex-direction: column;
 
@@ -51,11 +51,11 @@ const Input = styled.input`
   margin: ${rem(10)} 0;
 
   &:focus {
-    border-bottom: 1px solid ${theme.mint};
+    border-bottom: 1px solid ${theme.blue};
     box-shadow: inset 0 2px 20px rgba(0,0,0,0.17);
 
     &::-webkit-input-placeholder {
-      color: ${theme.mint};
+      color: ${theme.blue};
       transition: all .3s ease;
     }
   }
@@ -91,7 +91,7 @@ const validateEmail = email => {
 
 const Spin = () => (
   <SpinWrapper>
-    <Spinner name="ball-triangle-path" color={theme.mint} />
+    <Spinner name="ball-triangle-path" color={theme.blue} />
   </SpinWrapper>
 )
 
@@ -137,7 +137,7 @@ class Register extends Component {
 
     return (
       <Wrapper>
-        <EndPageBackground/>
+        <startPageBackground/>
         <Header color={theme.whiteFont}>
           {title}
         </Header>

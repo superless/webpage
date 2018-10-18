@@ -66,6 +66,7 @@ const Base = styled.div`
 const IndexPage = (data) => (
   <Layout>
     <Wrapper>
+    
         <Hero>
           <div className="content">
   <div className="content__container">
@@ -81,10 +82,10 @@ const IndexPage = (data) => (
     </ul>
     
   </div>
+  
 </div>
 <Particles/>
-                </Hero>
-           
+                </Hero>    
         <Wave />
         <Img alt="equilibrio entre aprender, enseñar, construir e innovar" fluid={data.data.contentfulIndex.frontImage.fluid} />
       </Wrapper>
