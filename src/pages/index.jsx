@@ -11,6 +11,7 @@ import Hero from '../utilities/Hero';
 
 import {Layout} from './../elements'
 import Home from '../components/mfort/home'
+import Particles from 'react-particles-js';
 
 const pulse = keyframes`
   0% {
@@ -81,6 +82,7 @@ const IndexPage = (data) => (
     
   </div>
 </div>
+<Particles/>
                 </Hero>
            
         <Wave />
