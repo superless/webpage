@@ -116,7 +116,7 @@ class ParticlesApp extends Component{
             <Particles
             params={particleOpt} 
             />
-
+        
         );
     };
 
