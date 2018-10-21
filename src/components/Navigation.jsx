@@ -60,7 +60,6 @@ class Navigation extends Component {
           <LogoText>TRIFENIX</LogoText>
         </StyledLink>
         <Nav>
-          <Link to="/Clientes">Clientes</Link>
           <Link to="/blog">Aprende</Link>
            <Link to="#subscribe" onClick={()=>goToAnchor("subscribe")}>Contacto</Link>
         </Nav>
