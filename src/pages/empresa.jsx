@@ -13,24 +13,14 @@ const Impressum = () => (
     <Header title="Nuestra Empresa" />
     <div style={{ marginTop: '3rem' }}>
       <Container type="article">
-        <h2>TRIFENIX</h2>
+        <h2 align="center">TRIFENIX</h2>
        
-        <h2>Contacto</h2>
-        <p>
-          E-Mail:{' '}
-          <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#108;&#101;&#107;&#111;&#097;&#114;&#116;&#115;&#046;&#100;&#101;">
-            hola@trifenix.com
-          </a>
-          Telefono: +56 2 5026284
-        </p>
-       
-        <h2>Nuestra empresa</h2>
+        
         <p>
           Somos un equipo de desarrolladores de distintas áreas comerciales, con más de 10 años de experiencia asesorando a grandes empresas en la búsqueda de la optimización tecnológica.
         </p>
         <p>
-          Nuestra trayectoria laboral en distintas empresas y distintos paises, 
-          siempre observamos la necesidad de una nueva visión, aquella donde las pequeñas y medianas empresas puedan llegar 
+          Siempre observamos la necesidad de una nueva visión de empresa a lo largo de nuestra trayectoria laboral en distintas empresas y distintos paises, aquella donde las pequeñas y medianas empresas puedan llegar 
           a un nivel óptimo de tecnología (y de ingresos), con los costos de las nuevas tendencias en la nube y la facilitación de los procesos de construcción.
         </p>
         <p>
@@ -40,14 +30,30 @@ const Impressum = () => (
           el que no quiere avanzar, pues simplemente se queda sumergido en las tecnologias obsoletas. 
           </p>
           <p>
-          Nuestro aprendizaje ha sido constante, porque ahora nosotros definimos el mejor camino,  tenemos todas las competencias
+          Nuestro aprendizaje ha sido constante, porque ahora nosotros definimos el mejor camino, tenemos todas las competencias
           para hacer cambiar el rumbo de las empresas, no estamos estancados en procesos anticuados, ni gente que nos limite.
           </p><p>
           Hemos estudiado profundamente los costos y los beneficios, y esperamos ansiosamente mostrarle lo que podemos hacer por su compañía.
+          </p>
+          <h2>Misión</h2>
+<p>
+Asesoramos a las organizaciones sin fines de lucro, pequeñas y medianas empresas en su transformación digital.
 
+</p>
 
-
+   <h2>Visión</h2>
+<p>
+  Ser una empresa que colabore en el crecimiento de nuestros clientes, en base a su confianza en la tecnología y sus nuevos modelos de eficiencia que entregan el valor real a su compañia.  
+</p>
+<h2>Contacto</h2>
+        <p>
+          E-Mail:{' '}
+          <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#108;&#101;&#107;&#111;&#097;&#114;&#116;&#115;&#046;&#100;&#101;">
+            hola@trifenix.com
+          </a>
+          <p>Telefono: +56 2 5026284</p>
         </p>
+
       </Container>
     </div>
     <Footer />
