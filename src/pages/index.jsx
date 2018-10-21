@@ -11,7 +11,7 @@ import Hero from '../utilities/Hero';
 import {Layout} from './../elements'
 import Home from '../components/mfort/home'
 
-import ParticlesApp from '../utilities/ParticlesApp';
+import Particles from '../utilities/ParticlesApp';
 
 const pulse = keyframes`
   0% {
@@ -84,7 +84,7 @@ const IndexPage = (data) => (
   </div>
   
 </div>
-<ParticlesApp></ParticlesApp>
+<Particles/>
                 </Hero>    
         <Wave />
         <Img alt="equilibrio entre aprender, enseñar, construir e innovar" fluid={data.data.contentfulIndex.frontImage.fluid} />
