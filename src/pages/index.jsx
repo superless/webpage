@@ -65,9 +65,11 @@ const Base = styled.div`
 
 const IndexPage = (data) => (
   <Layout>
+   
     <Wrapper>
-    
+   
         <Hero>
+        
           <div className="content">
   <div className="content__container">
     <p className="content__container__text">

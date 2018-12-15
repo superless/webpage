@@ -9,6 +9,10 @@ import { SectionCards, Card } from './card'
 import SectionImageBoxes from './boxImage'
 import Subscribe from './formRegister'
 
+import Hexagonos from './hexagono'
+import Hexagonoscss from '../../utilities/Hexagonos'
+import $ from 'jquery'
+
 import SectionPhone from './sectionPhone'
 
 import {  access,   control, form } from '../../data/home.yml'
@@ -89,8 +93,18 @@ const Home = () => {
         
         return (
           <div>
+            <Subscribe
+                title={form.title}
+                button={form.button}
+                />
+           <div>
+             <Hexagonoscss>
+             <Hexagonos/>
+             </Hexagonoscss>
+             
+             
           
-           
+             </div> 
             <Link to={index.wideContent[0].blog.slug}>
               <div>
                 <Section
@@ -170,10 +184,7 @@ const Home = () => {
               padding={'20vh 0 0'}
             />
             
-            <Subscribe
-                title={form.title}
-                button={form.button}
-                />
+          
             
               
                 </div>

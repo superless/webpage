@@ -140,6 +140,7 @@ const PortfolioImage = ({ img }) => (
       alt="Portfolio tracker"
     />
   </StaticImage>
+
 )
 
 PortfolioImage.propTypes = {
@@ -150,7 +151,7 @@ const HomeImage = ({ img }) => (
   <GatsbyImg
     imgStyle={{ width: 340 }}
     fixed={img.childImageSharp.fixed}
-    alt="Mintfort application"
+    alt="TRIFENIX application"
   />
 )
 
@@ -203,6 +204,7 @@ Text.propTypes = {
 }
 
 const Image = ({ img, id }) => (
+  
   <ImageWrapper>
     {id === 'home' ?
       <HomeImage img={img}/> :

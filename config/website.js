@@ -9,7 +9,7 @@ module.exports = {
   siteUrl: 'https://www.trifenix.com',
   pathPrefix: '/',
   siteDescription:
-    'Somos una empresa joven e innovadora, trabajamos con lo último en tecnologías para la programación de sitios web, desarrollamos PWA, e-commerce, integraciones de sistemas, entre otros servicios ligados a la tecnología.',
+    'Somos una agencia de software joven innovadora, trabajamos con lo último en tecnologías para la programación de sitios web progresivos, e-commerce, integraciones de sistemas, entre otros servicios ligados a la tecnología.',
   // IDs
   googleAnalyticsID: '',
   twitter: '@trifenix_io',
@@ -21,7 +21,7 @@ module.exports = {
   siteTitleAlt: 'TRIFENIX Innovación Continua', // This allows an alternative site title for SEO schema.
   publisher: 'TRIFENIX', // Organization name used for SEO schema
   siteDescription:
-    'Agencia de desarrollo de sitios web e integraciones. Ayudamos a empresas y organizaciones sin fines de lucro a potenciar sus sistemas informáticos para su propio beneficio',
+    'Agencia de software, sitios web e integraciones. Ayudamos a empresas y organizaciones no gornubenamentales (ONG) a potenciar sus sistemas informáticos para su propio beneficio',
   siteUrl: 'https://www.trifenix.io', // Site domain. Do not include a trailing slash! If you wish to use a path prefix you can read more about that here: https://www.gatsbyjs.org/docs/path-prefix/
   author: 'trifunnyx', // Author for RSS author segment and SEO schema
   authorUrl: 'https://www.trifenix.com/', // URL used for author and publisher schema, can be a social profile or other personal site

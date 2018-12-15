@@ -147,6 +147,7 @@ class SEO extends Component {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:image" content={image} />
         <meta name="twitter:description" content={description} />
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'></link>
         <title>{title}</title>
         <script type="text/javascript">
      

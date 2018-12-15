@@ -137,8 +137,8 @@ class Register extends Component {
 
     return (
       <Wrapper>
-        <EndPageBackground/>
-        <Header color={theme.whiteFont}>
+
+        <Header color={theme.lightFont}>
           {title}
         </Header>
         <ScrollableAnchor id='subscribe'>

@@ -36,14 +36,14 @@ const ImageWrapper = styled.div`
 `
 
 const PhoneWrapper = styled.div`
-  width: ${rem(657)};
+  width: ${rem(357)};
 
   ${mobile(css`
-    max-width: ${rem(500)};
+    max-width: ${rem(200)};
   `)}
 
   ${phone(css`
-    max-width: ${rem(300)};
+    max-width: ${rem(100)};
   `)}
 `
 

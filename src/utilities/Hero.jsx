@@ -4,6 +4,7 @@ const Hero = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
+  right: 
   transform: translate(-50%, -50%);
   z-index: 1000;
   color: ${props => props.theme.colors.white.light};

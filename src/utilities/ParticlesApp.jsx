@@ -70,7 +70,7 @@ const particleOpt = {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
+        "enable": true,
         "mode": "grab"
       },
       "onclick": {
@@ -81,7 +81,7 @@ const particleOpt = {
     },
     "modes": {
       "grab": {
-        "distance": 400,
+        "distance": 150,
         "line_linked": {
           "opacity": 1
         }

@@ -1,7 +1,7 @@
 hero:
-  title: Take control over your assets.
-  subTitle: Be Your Bank.
-  body: "The first crypto-friendly bank account. \nStore and manage assets on the blockchain."
+  title: Potencia tu empresa.
+  subTitle: El futuro es ahora.
+  body: "Accede a la tecnología moderna que ayudara a tu empresa a dar el siguiente paso en la transformación digital. Nosotros te ayudamos."
   img: assets/images/hero_home.png
 
 imagine:
@@ -18,17 +18,17 @@ buy:
 cards:
   a :
       id: 1
-      title: Pay at your local store with virtual currencies.
-      img: assets/images/shop_high.gif
+      title: .
+      img:
     
   b :
       id: 2
-      title: Control all your assets where ever you want.
-      img: assets/images/payment_high.jpg
+      title: 
+      img:
   c :
     id: 3
-    title: Receive your payroll in Bitcoin and more.
-    img: assets/images/payroll_high.gif
+    title: 
+    img:
     
  
 
@@ -37,60 +37,60 @@ cards:
 
 access:
   title: Tenemos un pool de herramientas y destrezas para ayudarte.
-  subTitle: Mantenemos una continua actualizacion, renovamos nuestros metodos para mejorar el desarrollo de proyectos. Mantenemos experiencias en diferentes areas para una atencion mas completa e integral.
+  subTitle: Mantenemos una continua actualización, renovamos nuestros métodos para mejorar el desarrollo de proyectos. Mantenemos experiencias en diferentes áreas para una atención más completa e integral.
     
   
 
 boxes:
   a :
       id: 1
-      title: cualquier basura
-      component: Wallet
+      title:
+      component: 
    
   b :
       id: 2
-      title: P2P Transfer
-      component: P2P
+      title: 
+      component: 
    
   c :
       id: 3
-      title: Payment Solution
-      component: PaymentSolution
+      title: 
+      component: 
     
   d :
       id: 4
-      title: Smart Exchange
-      component: SmartExchange
+      title:
+      component:
    
   e :
       id: 5
-      title: Tokenized Fund
-      component: Tokenized
+      title:
+      component:
     
   f :
       id: 6
-      title: Portfolio Management
-      component: Portfolio
+      title:
+      component:
     
   g :
       id: 7
-      title: AI Trading Bot
-      component: AI
+      title:
+      component:
     
   h :
       id: 8
-      title: Wallet
-      component: Camarainst
+      title:
+      component:
    
 
 control:
-  title: Se rápido, entrega una experiencia positiva a tus clientes
+  title: Sé rápido, entrega una experiencia positiva a tus clientes
   subTitle: Crece, usa las herramientas del presente para entrar al mundo de internet junto con todas las bondades que te entregan los servicios informáticos en la nube, trabajamos con la comunidad de código abierto (Open Source) para ayudar a emprendedores a surgir.
     
   
 
 form:
-  title: Registrese para recibir nuestras publicaciones
+  title: Déjanos tu correo, y te contáctaremos lo antes posible. 
   button: Enviar
     
   
