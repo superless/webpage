@@ -63,7 +63,8 @@
     "react-youtube": "^7.6.0",
     "typeface-istok-web": "^0.0.54",
     "typeface-montserrat": "^0.0.54",
-    "typography": "^0.16.17"
+    "typography": "^0.16.17",
+    "yarn": "^1.12.3"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
