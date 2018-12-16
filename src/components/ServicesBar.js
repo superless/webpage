@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes, css } from 'react-emotion';
+import styled, { keyframes, css } from '@emotion/styled';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled.div `

@@ -9,9 +9,9 @@ import { SectionCards, Card } from './card'
 import SectionImageBoxes from './boxImage'
 import Subscribe from './formRegister'
 
-import Hexagonos from './hexagono'
-import Hexagonoscss from '../../utilities/Hexagonos'
-import $ from 'jquery'
+//import Hexagonos from './hexagono'
+//import Hexagonoscss from '../../utilities/Hexagonos'
+//import $ from 'jquery'
 
 import SectionPhone from './sectionPhone'
 
@@ -97,13 +97,8 @@ const Home = () => {
                 title={form.title}
                 button={form.button}
                 />
-           <div>
-             <Hexagonoscss>
-             <Hexagonos/>
-             </Hexagonoscss>
+           <div>           
              
-             
-          
              </div> 
             <Link to={index.wideContent[0].blog.slug}>
               <div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
-import styled from 'react-emotion';
+import styled from '@emotion/styled';
 import Helmet from 'react-helmet';
 import { Container, Layout } from '../elements';
 import config from '../../config/website';

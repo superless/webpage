@@ -2,7 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
-import styled , {keyframes}from 'react-emotion';
+
+/*import styled , {keyframes}from '@emotion/styled';*/
+
+import styled from '@emotion/styled'
+import {keyframes} from '@emotion/core'
+
 import { Container, Layout } from '../elements';
 import ScrollableAnchor from 'react-scrollable-anchor'
 import ItemBlog from '../components/ItemBlog';

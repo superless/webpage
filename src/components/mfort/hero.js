@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import GatsbyImg from 'gatsby-image'
 import { FaChevronDown } from 'react-icons/fa'
 import { goToAnchor } from 'react-scrollable-anchor'
-import styled, { css } from 'react-emotion'
+import { css } from 'emotion';
+import styled from '@emotion/styled';
 
 import StartPageBackground from './backgrounds/pageStart'
 

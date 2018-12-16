@@ -1,6 +1,9 @@
 import React from 'react';
 import {Share} from 'react-twitter-widgets'
-import styled, { keyframes, css } from 'react-emotion';
+/*import styled, { keyframes, css } from '@emotion/styled';*/
+import styled from '@emotion/styled'
+import { css } from 'emotion'
+import {keyframes} from '@emotion/core'
 import Img from 'gatsby-image';
 import { Link, graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';

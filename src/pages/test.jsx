@@ -3,7 +3,8 @@
 import React from 'react';
 
 import { Link, graphql } from 'gatsby';
-import styled, {keyframes} from 'react-emotion';
+import {keyframes} from '@emotion/core';
+import styled from '@emotion/styled';
 import { Container, Layout } from '../elements';
 import Footer from '../components/Footer';
 import Wave from '../elements/Wave'

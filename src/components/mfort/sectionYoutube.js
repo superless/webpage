@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import GatsbyImg from 'gatsby-image'
 import { graphql, StaticQuery } from 'gatsby'
-import styled, { css } from 'react-emotion'
+import { css } from 'emotion';
+import styled from '@emotion/styled';
 import Fade from 'react-reveal/Fade'
 import YoutubeEmbed from './../capabilities/YoutubeEmbed'
 import DividerEnd from './backgrounds/end'
