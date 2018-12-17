@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /empresa
+
+sitemap: https://www.trifenix.io/sitemap.xml

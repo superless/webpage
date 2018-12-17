@@ -1,0 +1,96 @@
+hero:
+  title: Potencia tu empresa.
+  subTitle: El futuro es ahora.
+  body: "Accede a la tecnología moderna que ayudara a tu empresa a dar el siguiente paso en la transformación digital. Nosotros te ayudamos."
+  img: assets/images/hero_home.png
+
+imagine:
+  title: Construimos aplicaciones web progresivas
+  subTitle: En estados unidos, nacen cada día muchas start-ups relacionadas con Internet, los servicios de tecnología están al servicios de estas empresas a costos muy bajos, casi todos los servicios en la nube son gratuitos inicialmente, eso permite que la posibilidad de tener una empresa exitosa sea más fácil para ellos que para nosotros, ¡hasta ahora!.
+  background: assets/svg/dotted_side_blue_background.svg
+
+buy:
+  title: Las grandes empresas apuestan por PWA
+  subTitle: "Microsoft, Google y Apple ya han adoptado PWA es sus respectivos sistemas operativos"
+  img: assets/images/banking_made_simple.png
+  background: assets/svg/dotted_white_background-01.svg
+
+cards:
+  a :
+      id: 1
+      title: .
+      img:
+    
+  b :
+      id: 2
+      title: 
+      img:
+  c :
+    id: 3
+    title: 
+    img:
+    
+ 
+
+  
+   
+
+access:
+  title: Tenemos un pool de herramientas y destrezas para ayudarte.
+  subTitle: Mantenemos una continua actualización, renovamos nuestros métodos para mejorar el desarrollo de proyectos. Mantenemos experiencias en diferentes áreas para una atención más completa e integral.
+    
+  
+
+boxes:
+  a :
+      id: 1
+      title:
+      component: 
+   
+  b :
+      id: 2
+      title: 
+      component: 
+   
+  c :
+      id: 3
+      title: 
+      component: 
+    
+  d :
+      id: 4
+      title:
+      component:
+   
+  e :
+      id: 5
+      title:
+      component:
+    
+  f :
+      id: 6
+      title:
+      component:
+    
+  g :
+      id: 7
+      title:
+      component:
+    
+  h :
+      id: 8
+      title:
+      component:
+   
+
+control:
+  title: Sé rápido, entrega una experiencia positiva a tus clientes
+  subTitle: Crece, usa las herramientas del presente para entrar al mundo de internet junto con todas las bondades que te entregan los servicios informáticos en la nube, trabajamos con la comunidad de código abierto (Open Source) para ayudar a emprendedores a surgir.
+    
+  
+
+form:
+  title: Déjanos tu correo, y te contáctaremos lo antes posible. 
+  button: Enviar
+    
+  
