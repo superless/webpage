@@ -43,6 +43,7 @@ const Text = styled.div`
     }
   `)}
 `
+//movimiento de las imagenes en página
 const EfectoLink = styled.div `
     a{
     display: flex;
@@ -54,11 +55,11 @@ const EfectoLink = styled.div `
     max-width: 100%;
     min-width: 100px;
     -webkit-transition-property: transform; /* Safari */
-    -webkit-transition-duration: 10s; /* Safari */
+    -webkit-transition-duration: 1s; /* Safari */
     transition-property: transform;
-    transition-duration: 10s;
+    transition-duration: 0.5s;
     &:hover {
-      transform: scale(1.8);
+      transform: scale(1.3);
       }
     }
 `;

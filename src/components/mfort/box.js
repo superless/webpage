@@ -43,7 +43,7 @@ const Box = ({ component, title, id, animate }) => (
       </MtSvgLines>
     </Container>
     <Container style={{ flex: 1 }} centrate>
-      <Fade delay={300}>
+      <Fade delay={100}>
         <Paragraph color={theme.blue}>
           {title}
         </Paragraph>
