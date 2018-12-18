@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import { css } from 'react-emotion'
+import { css } from 'emotion'
 import { configureAnchors } from 'react-scrollable-anchor'
 
 

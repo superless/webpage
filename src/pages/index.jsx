@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby';
-import styled, {keyframes} from 'react-emotion';
+import styled from '@emotion/styled' 
+import {keyframes} from '@emotion/core';
 
 import Footer from '../components/Footer';
 import Wave from '../elements/Wave'

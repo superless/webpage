@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import format from 'date-fns/format';
-import styled from 'react-emotion';
+import styled from '@emotion/styled';
 import { Wave, Container } from '../elements';
 
 const Wrapper = styled.footer`

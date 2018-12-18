@@ -1,4 +1,4 @@
-import { css } from 'react-emotion'
+import { css } from 'emotion'
 import {
   rem as _rem,
   transitions as _transitions
