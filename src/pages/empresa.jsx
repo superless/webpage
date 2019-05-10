@@ -48,7 +48,7 @@ Asesoramos a las organizaciones sin fines de lucro, pequeñas y medianas empresa
 <h2>Contacto</h2>
         <p>
           E-Mail:{' '}
-          <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#108;&#101;&#107;&#111;&#097;&#114;&#116;&#115;&#046;&#100;&#101;">
+          <a href="mailto:hola@trifenix.com;">
             hola@trifenix.com
           </a>
           <p>Telefono: +56 2 5026284</p>
